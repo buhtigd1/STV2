@@ -44,7 +44,7 @@ def main():
     print(f"Total channels found: {len(entries)}")
 
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-        f.write("#EXTM3U\n")
+        f.write("#EXTM3U x-tvg-url="https://bit.ly/3THSiiN"\n")
         for block in entries:
             for line in block:
                 f.write(line + "\n")
