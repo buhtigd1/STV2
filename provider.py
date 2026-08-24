@@ -58,7 +58,7 @@ def load_tvg_map(list_txt):
     return tvg_map
 
 def clean_extinf(line):
-    # Remove group-title, tvg-id, tvg-name, tvg-logo, and any "|" characters
+    # Remove all unwanted attributes
     line = re.sub(r'\s*group-title="[^"]+"', '', line, flags=re.IGNORECASE)
     line = re.sub(r'\s*tvg-id="[^"]+"', '', line, flags=re.IGNORECASE)
     line = re.sub(r'\s*tvg-name="[^"]+"', '', line, flags=re.IGNORECASE)
@@ -72,7 +72,7 @@ def inject_tvg(line, tvg_map, log_entries):
     name = line.split(",", 1)[-1].lower().strip()
     for key, tvgid in tvg_map.items():
         if key in name:
-            # Replace the base EXTINF with a fresh tvg-id only
+            # Replace the whole EXTINF header with a clean tvg-id only
             line = re.sub(r'#EXTINF:-1.*?,', f'#EXTINF:-1 tvg-id="{tvgid}",', line)
             log_entries.append(f"INJECTED {tvgid} for {name}")
             return line
