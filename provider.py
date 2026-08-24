@@ -55,11 +55,11 @@ def clean_extinf(line):
 
         # Replace lines
         if channel_name_norm.lower() == "tnt sports 1":
-            return '#EXTINF:-1 tvg-id="TNTSports1.uk@SD" tvg-logo="https://raw.githubusercontent.com/didikc/TV-Logo/main/logos/tnt-sports-1-uk.png" ,TNT Sports 1'
+            return '#EXTINF:-1 tvg-id="TNTSports1.uk@HD" tvg-logo="https://raw.githubusercontent.com/didikc/TV-Logo/main/logos/tnt-sports-1-uk.png" ,TNT Sports 1'
         elif channel_name_norm.lower() == "tnt sports 2":
-            return '#EXTINF:-1 tvg-id="TNTSports2.uk@SD" tvg-logo="https://raw.githubusercontent.com/didikc/TV-Logo/main/logos/tnt-sports-2-uk.png" ,TNT Sports 2'
+            return '#EXTINF:-1 tvg-id="TNTSports2.uk@HD" tvg-logo="https://raw.githubusercontent.com/didikc/TV-Logo/main/logos/tnt-sports-2-uk.png" ,TNT Sports 2'
         elif channel_name_norm.lower() == "tnt sports 3":
-            return '#EXTINF:-1 tvg-id="TNTSports3.uk@SD" tvg-logo="https://raw.githubusercontent.com/didikc/TV-Logo/main/logos/tnt-sports-3-uk.png" ,TNT Sports 3'
+            return '#EXTINF:-1 tvg-id="TNTSports3.uk@HD" tvg-logo="https://raw.githubusercontent.com/didikc/TV-Logo/main/logos/tnt-sports-3-uk.png" ,TNT Sports 3'
 
         # Default case: no tvg-id, just clean name
         return f"#EXTINF:-1,{channel_name_norm}"
