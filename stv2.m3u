@@ -165,41 +165,11 @@ https://amg17560-fcb-amg17560c1-rakuten-uk-4891.playouts.now.amagi.tv/playlist/a
 https://amg17560-fcb-amg17560c1-rakuten-uk-4891.playouts.now.amagi.tv/playlist/amg17560-fcbarcelona-topbarcaenglish-rakutenuk/playlist.m3u8?ads_amagi_channel_id=940&ads_amznbrmid=&ads_amznregion=&ads_amznslots=&ads_app_bundle=com.rakutentv.web&ads_app_store_url=rakuten.tv&ads_app_version=&ads_brand_name=&ads_content_categories=IAB17&ads_content_genre=sports&ads_content_livestream=0&ads_device_lmt=0&ads_device_make=chrome&ads_device_model=GENERIC&ads_device_type=web&ads_device_year=1970&ads_env=prod&ads_extra_eids=&ads_gam_correlator=283910008697892&ads_gdpr_consent=&ads_google_ad_manager_nonce=&ads_ifa_type=ppid&ads_inv_partner_domain=rakuten.tv&ads_ip=185.164.139.44&ads_market=uk&ads_network_name=RakutenTV&ads_os_language=&ads_placement=1&ads_player_height=1080&ads_player_width=1920&ads_pod_type=playerpage_midroll&ads_ppid=e3dd2658-e93a-4cee-9d4b-27200826a904&ads_prodq=1&ads_rating=0&ads_rtv_content_id=6348&ads_rtv_content_language=en&ads_rtvid=271858&ads_streaming_id=e67f50fc-858b-4853-8fd6-464543972dfc&ads_tivo_devcountry=&ads_tivo_devmakedate=&ads_tivo_mvpd=&ads_tivo_platform=&ads_tivo_usid=&ads_tivo_uxloc=&ads_user_type=visitor
 #EXTINF:-1,Real Madrid Tv 🇪🇸
 https://rmtv.akamaized.net/hls/live/2043153/rmtv-es-web/bitrate_3.m3u8
-#EXTINF:-1,[England Premier League] Fulham Vs Chelsea  De (Plyfst)
-#EXTVLCOPT:http-referrer=https://exposestrat.com
-#EXTVLCOPT:http-origin=https://exposestrat.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://cdn9.zohanayaan.com:1686/hls/do15.m3u8?md5=QpC4MXS9t-t2ab0lQ7zbDw&expires=1787614252
-#EXTINF:-1,[England Premier League] Fulham Vs Chelsea  En (Plyfst)
-#EXTVLCOPT:http-referrer=https://exposestrat.com
-#EXTVLCOPT:http-origin=https://exposestrat.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://cdn1.zohanayaan.com:1686/hls/do10.m3u8?md5=UgD9NzTxnIrxuUqaRpI1vQ&expires=1787614251
-#EXTINF:-1,[England Premier League] Fulham Vs Chelsea  Nz (Plyfst)
-#EXTVLCOPT:http-referrer=https://exposestrat.com
-#EXTVLCOPT:http-origin=https://exposestrat.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://cdn1.zohanayaan.com:1686/hls/do9.m3u8?md5=OJXmfsRoXjKYdMZzzbyRaw&expires=1787614248
-#EXTINF:-1,[England Premier League] Fulham Vs Chelsea  Se (Plyfst)
-#EXTVLCOPT:http-referrer=https://exposestrat.com
-#EXTVLCOPT:http-origin=https://exposestrat.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://cdn7.zohanayaan.com:1686/hls/do78.m3u8?md5=VnQ9AA3Six9iDwiMkR6VLw&expires=1787614254
 #EXTINF:-1,[Football] As Roma Vs. Fiorentina  English (Strmcntr)
 #EXTVLCOPT:http-referrer=https://streame.center
 #EXTVLCOPT:http-origin=https://streame.center
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
 https://edgestream2.pro/hls/syaLqucEne4k.m3u8
-#EXTINF:-1,[Football] Fulham Vs. Chelsea (Embdsprt)
-#EXTVLCOPT:http-referrer=https://embedsport.live/
-#EXTVLCOPT:http-origin=https://embedsport.live/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://server1.embedfootball.site/vip6/playlist.m3u8?playlist=Bj9DMAVrHQ4dIVtGFDtaQB41Fi0ZdVRLASNSBTgfdgFeeQFtRmkfE0xjX1Ycf1dMEmtfNwlnY386BEduOBYgeDYNcg8nN0IWFitzVkE4QUAvAH5uOgtrTiYVRlscFzYEViJwORBhdwRKCk9kQ2ZWfQEifT0uIHdTO39yQR4gfAEoA18MBidjaA54YUAVKEZwBABAMykye1I5BVQcJBgSQAAmeQkuGgtsNXl8cDwhWkBDOVN7XxgIX1YSVWEkODRHGyZxJAEcc2YUGV4ROx5CZQEYDAQPAn9iGX97HwUcfAEoBVw6HQRcWDQODWo6K2NlIyV3bRdqWwNRAF0dGSIVdl8PcTdCOEBWTwN0QQMhcxI6Pm8nOBNfcFt3QFtxVmt1VgoPeTRleVMQJUlvKBxkYkYkbz83fwNgOhxsQisAfAEoPQUKJGZmZi8aWm0AawdAJR5iMCERSFElFmxbDT8BUQF4dhAjOVZLFQpBBkIQcBECPHA5PxdLRBF0bGA4K25DJgZUeQdlRmBAKnVTBD5BdUIzazEVM1pQFwETGA47YX8gCXERHwYDYj04XG4WA2IBRRJCbQYVVRdaCH0fISE4aw8ZQS5TY3QESg5qVgV3BmJHNn5qKG98Eyp_Yk0AGBcKJHxGcwNlVQRKDgFGBjBRc0cbcDpVMEhxKR5BRSIXKwIvBl0jNR9mFQ0JdlY3dwZmEycOBi4jZVQaCXBDfAAWYS0EZQEEPVxbCHV2awc6Q3cTZQgWFR9bdBkeZUIlOXwBLBgCKycyaG8pPVZ5FiJsbiEYAQQAL1lWBBV9YzkkI31fCQMaDDpYTi59WBoxdwZmNBxqPQsARHU5I25QAhwuAEt5dQkuHWMVHSpabDURBVUScQocSGh3XwUXQnx-I2xZHnp4ExwWY0UVL1VJQwcNHEAYDiwcaHkfDTZzD3o1EHdbPgMMJjxHUiIKYHQhGH5ULjZBOwZ_A2QtMHFzLkQVUjoJcwYvN31LCS4KTiEzWEktI18nWm0FQjQDYWMPPG4EHTJwdwMGRARKCkltNQZuFDA5ST0DFXttJS9OfCM-CnkrMnEOTih6ZRknflNJJ1pUBRJOGBkpdkRSHhMYCjUPeF8SQTEGGwBsH3lrFyUlc35DH3MpNzIARCxxUH16Ry5HKip-FwAZCncgC0tVAWV1FUdxChw3KV0XVQsGUyMcaV44clkjJRoGbjYhAVc4dwZiGnEKGB4JeRMQEFUdLTcIaSgARDM7AX5iXX5_T1VgdgFFEmofLwAJFhF1QHAjBCsCGDpvJBsURRNKHHBPHyYAajs2fmY_bBQUJTVRfnhWa3EdJlwJEAJ0WBF_dHkzBAIBRRJTaw8sVHY5KwJ9MQQxQD0BUjMQPWVYPwQOcAgnbW8CLXxmXSpyXjYwX0J9QxRXP3Nedj8weUs8NXdVRj9GfgMGbWk9FFRKFDADZB4SaHo0A1kTGzN8VC8ZVgZCFFxeQyNMKy47fxE1IlRtDyIvUAIYcCQcYH9WMwNBSyVifncmG28pXChLVykRXWMDFy1iCT4DGTIeW1M7Gw1BEihTVCEcfG4DYnplCCF0aTwZAUcmDnktHnQAYxYdc3YZOkURFWcdbCssCQNRAG5eIj00YB8-ZTYlIwZYHgdXZzsqUhwPJm4_Og4HS1AEc0UhFW1lIAdfLCMjCk8gCQ9ORDZ4QEFsdzcGLn9ARnR0SwQjIUNLeXF3ACtcUzw1XlYCP3tGNTNLNjobY28aAExrKgooRCMJbxVEOEViHSRbdCU1ZEg6YnYNBBx2A1EAc0YiVmtxXT1dEjkgWG5LBGkVOjRxdg4faC0dHgNKNih5Wg5KYWkCJ2ADHxt5ZwF8em0FHQNiJmRVe18cV2o1CWFHfRtoCwV5YhElGUNuEwNXZxcURn4wcQocHCxBbFURel0jFSxZJyFOcBx0AGMtDlt1ITZzZQA6bSs7D1NVJApEZA0gL0I2KEABFBxDdhYjCnYzMFtXPwVXbS5_A2QPB3h9eyI3fh0HeikEJUtpO31gYTU4d3IQYHsHCT4UFCUNeWMwEDhlWioOFyIBQ1YXFGBKFToHQA9hDBo1LGBSGTFVYS0LFGBWDnUODmJnRzVpC2UyBnV2DwVUFD0DFBQlLltgbUEbYQAOehQyK0pmOXUMcRs8QnAjOXopOhxpSjAve3MlKWBlIn1HFCQCVGtKIHRlBQFBVDZtdxY9MQRXFi5gEj8qMhZcCVBlRBdgFSJ0aHooPGxgQRxiDxQ8AXwBcX0aITsVaV46fTYhZH5NNxlqcR8LERYxOHM5BTFoRFAyYEskOCpKJiBEK0IpYG0baQthPXcHYA&expires=1787619900&token=b7d5749cd8b159c348f00d253723086018fe173cdee8a7168e70d07b95955bef
-#EXTINF:-1,[Football] Málaga Vs. Deportivo (Embdsprt)
-#EXTVLCOPT:http-referrer=https://embedsport.live/
-#EXTVLCOPT:http-origin=https://embedsport.live/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://server1.embedfootball.site/vip6/playlist.m3u8?playlist=Bj9DMAVrHQ4dIVtGFDtaQB41Fi0ZdVRLASNSBSQSNVoJKhhyRmMEDEh0FBFEfVlHEXlcOx1lVk8He3deHkVgVDhuBQYQHXEUTQ5tEUgRfXAzZXMUP2liQScsBg96NWFwHSB6MTBgB3JPLnJuIAUHdDoHdws1AwVSCChOZQMKMmVLeXFxDCVbSQ4ldnVENX9FOhN9Hx4TRVBVdgduIRI2QwlyTRMkA1VCDCdoSAFkR2wxHmoIVQxWaS13WG1tQRt8OQFNMkQmZkgBGF9JOmFmVERlbRovA0MRWxNGXH80HXsCKXsVHWRLZwEYS0kgakdjHGFfaSoVfRFGdHBIAAY-RjgvfC4FMgFzO3hJQAA4ZndAE1EdKR1Dfho2DlsRSwBkWAZPNzsERXMSAEBFFjNVaBttXBc-fwNkDSxXfG1BH2QmfgcEAyZDTzwWYRsZBVx0MQVsLVgCCWgHMmZHJyoed1wkfAtCGHRwDDgcETYBXkZDEFsbL2tbSkZ0cHg6Kh5rAhhEcgYwR2NLKnpuMTNidjA5UxddbQNyVhZiRBBWa3VbAn0LBnQAYzYUVWlHAWR3MBALJBcPFBQhLXoPejE_AgE6UTIVB3MESg5PehUoeW1PPX8nNRgFaBcFBXx6Cx9YWCVVEgYmYW41OVQVMzgHcRkiajBUA393EX9PZgIkNV40BQMnHAkDdS4jaXojM3oUQThoKCEgWmINInUdPgQNRRojQxEUOFBQPChNckl3BmI5JFkOJm1bA1EEXmAeGWtwX3kHFx4GZFIoelpXP3cGYjwbfzQAFmNLJTBDWxIZP3xYbgUGLGF_SRR9C3k8FBEWMXEKGAV_A2RSFHpEcT0tewkDBDI4GnpUC3pfV0MAB3wCYR1sKx17XiU2D1wiVmt1FCYHJ0Y5YVZBNUFVAWFtaDYOYi0UFXIQEQMDRh8JDHYJPQAEJyJ2eys4fkEqBFxwLTtvLxgyeGUxKERSPjkLUQATVS8zOXMSMSpydBU5c0kcOXB7XxhofAYBWFttQR9kKX9SOjQYRWMKeF9XNAJ1AUUWa2oiLGdNE3dPaRshLngXOQZzLGJ9Eigqf3pBFREWNSVyKx4PSERUBUJvOyMPBQUPDnIwGUhQEnpeExMHelEEOmgSHBJEdFYDdU95QhJgVhgScjA2A0IWdQ8GQhBQUEEgHWwvHwd-On9BUCUbDHZeI3YDLiNAd0l4DVMoHXJ9ImQIEBgudGQULE8PejEeaR0nYHMQGF53Mz1jVSEYfnEzHn5sJDZYdg4EThseFz5HDRFnNU45R0wqfHgGQhRkHBUjTRE4P34eCiF0WBsXO1sZJ0N2GxJ-aSklf0AWKgRuLh5wZxQ3ex8UHmdnGiIqWw0AYWVEF3FDPDhzTR4Ed1ZAGH4TXBt1VQEiW0MiRwlUFAMScjQ-aEgqJ1VtNj1fTx47SyYKMVpNJHJkUhFKAUA6HkclIQtEE11-e1cHagxOITttPTkVZkAaAkduBgM4FlwJTSg5BHhkNQNWSDgLV2YQJFQbCxtUEQINZE0pCTtAJCpzME8If2BPI291GQReFCMXYQsuAwdqEgVkQwcKPF4jIRJyMCUKakkJenlAEUd3Bj96EycsRx8tIXsfIgUJaR5uBQYiGWRNMgoMaiYUXWlPMwAdCjYDakZ0cFgORSlbIQdRIVNjdGtdfn9CCAVRfEQeSTo_EnZINwBDHylFYH0aKUIYJzoGTksudUsGJF8QPjYBGAA-FBQhD154H0srXwgJYyQVZFdvHRpeUSQYTnAAN14tAAtbblUoel0mEW5dAm4FBiZhFxM6FmBqBjdcAUUWUhw_A3B-VDBZaHw6NlUdc1M4OAV3dkANVWgpFgMWLhFyCwFtA3INCVJMGBU-BwIlWjcPHFRTSARJQjVkBk8_AHk5GglTdVcoYGUvQwtWVypBNhATB2sedFtkJGoRFjFmVjZYFHRuVjFBfHsGfAEoBnpyIDMCTzV9DFRCPG1cIT1NLgMOf0g3chMYDhUUCwsZfBUYZwRgMgFXcQIHYUYaGB1sKzgCYggpe1l-Jz5dNhhfZUQXB080L24RRDB_ST4cVCgbD3hPVCNAaxARPUYgeVk6FAdAR11-e2U-HHZCQnEKHBdoSEAGKFsfeSsSVjcpZRYDYApZSBgOcwMDUW8HG2psWxNVQysuT3I_PTsWXA1OAUAiB1YKHExVJyNeYD4RcB8qbQJSLBxaXgABLEYLJ00zM3QAZz0mXVMFYQdyDm1ZBCsoaWM1DFUaJx0QBQw-fhIyZnljFCpNeUEDAHACLHYqWmx1SSF3Tl18GBBaCngScjQFfk4_dXpIFAt-XCQjaXteHg&expires=1787609100&token=c88a5aba2130c8c90ab78f79f8d27876d0ca196e7de2e8d87bcca206233a3144
 #EXTINF:-1,[Italy Serie A] As Roma Vs Fiorentina 1 (Fawa)
 #EXTVLCOPT:http-referrer=http://www.fawanews.sc/
 #EXTVLCOPT:http-origin=http://www.fawanews.sc/
@@ -210,21 +180,6 @@ http://193.47.62.41/hls/dbbbbaaa.m3u8
 #EXTVLCOPT:http-origin=http://www.fawanews.sc/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
 https://play2.315nb.com/live/71944902_ed704ec5fa5fc75a6015303c958b75f1.m3u8?auth_key=6387611277-2-0-d9f59d7ff297fb94404ea9135651d8302
-#EXTINF:-1,[Italy Serie A] Roma Vs Fiorentina  It (Plyfst)
-#EXTVLCOPT:http-referrer=https://exposestrat.com
-#EXTVLCOPT:http-origin=https://exposestrat.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://cdn6.zohanayaan.com:1686/hls/do47.m3u8?md5=1od8rWzY-6ZlXIlA5NK9-Q&expires=1787614258
-#EXTINF:-1,[Italy Serie A] Roma Vs Fiorentina  Se (Plyfst)
-#EXTVLCOPT:http-referrer=https://exposestrat.com
-#EXTVLCOPT:http-origin=https://exposestrat.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://cdn10.zohanayaan.com:1686/hls/do71.m3u8?md5=oD4xT_Ve8gTM5ErE_463vw&expires=1787614260
-#EXTINF:-1,[Laliga] Málaga Cf Vs Deportivo De A Coruña (Istrmeast)
-#EXTVLCOPT:http-referrer=https://gooz.aapmains.net/new-stream-embed/55164?ad=111
-#EXTVLCOPT:http-origin=https://gooz.aapmains.net/new-stream-embed/55164?ad=111
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://chatgpt.hereisman.net/playlist/55164/load-playlist
 #EXTINF:-1,[Laliga] Málaga Vs Deportivo La Coruña 1 (Stp)
 #EXTVLCOPT:http-referrer=https://streamtp-golden1.click/global1.php?stream=dsports
 #EXTVLCOPT:http-origin=https://streamtp-golden1.click/global1.php?stream=dsports
@@ -340,16 +295,6 @@ https://b2ZmaWNpYWw.fubo18.com:443/disney2/mono.m3u8?token=9b6881f40f3caa14f33f6
 #EXTVLCOPT:http-origin=https://la18hd.su/vivo/canales.php?stream=espndeportes
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
 https://am91cm5leQ.fubo18.com:443/espndeportes/mono.m3u8?token=a9a42cefacf928bf35b2aefe6eacc306b7632f62-18-1787613349-1787595349
-#EXTINF:-1,[Premier League] Chelsea Vs Fulham (Strmfree)
-#EXTVLCOPT:http-referrer=https://streamfree.top/embed/soccer/chelsea-vs-fulham
-#EXTVLCOPT:http-origin=https://streamfree.top/embed/soccer/chelsea-vs-fulham
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://streamfree.top/live/chelsea-vs-fulham720p/index.m3u8?_e=1787628622&_n=fb2c5eb023261165&_t=m0WApd6SXGJ-_R0M055OTA
-#EXTINF:-1,[Premier League] Fulham - Chelsea (Embedhd)
-#EXTVLCOPT:http-referrer=https://exposestrat.com
-#EXTVLCOPT:http-origin=https://exposestrat.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://cdn14.zohanayaan.com:1686/hls/nfulham.m3u8?md5=-jX8Q4DiN4fQz6zBzEYTEA&expires=1787614247
 #EXTINF:-1,[Premier League] Fulham Vs Chelsea 1 (Stp)
 #EXTVLCOPT:http-referrer=https://streamtp-golden1.click/global1.php?stream=disney4
 #EXTVLCOPT:http-origin=https://streamtp-golden1.click/global1.php?stream=disney4
@@ -450,11 +395,6 @@ https://a2lja3m.fubo18.com:443/universo/mono.m3u8?token=b78ad80fca7a54502ddd17bf
 #EXTVLCOPT:http-origin=https://streamxhd.com/live1.php?stream=universo
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
 https://khala.skylivehd.com/global/universo/index.m3u8?token=4ecfdf01c28591d3b5b8f84ea4887e4b8298d682-40-1787639461-1787585461
-#EXTINF:-1,[Serie A] Fiorentina Vs As Roma (Strmfree)
-#EXTVLCOPT:http-referrer=https://streamfree.top/embed/soccer/fiorentina-vs-as-roma
-#EXTVLCOPT:http-origin=https://streamfree.top/embed/soccer/fiorentina-vs-as-roma
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://streamfree.top/live/fiorentina-vs-as-roma720p/index.m3u8?_e=1787628622&_n=d04362767251e792&_t=Rw3LJWgM2eFPad009xaeTw
 #EXTINF:-1,[Serie A] Roma Vs Fiorentina 1 (Stp)
 #EXTVLCOPT:http-referrer=https://streamtp-golden1.click/global1.php?stream=disney3
 #EXTVLCOPT:http-origin=https://streamtp-golden1.click/global1.php?stream=disney3
