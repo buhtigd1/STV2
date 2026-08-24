@@ -3,7 +3,7 @@ import re
 from datetime import datetime
 
 SOURCE_URL_1 = "https://raw.githubusercontent.com/raid35/docs/main/SPORT_UROP.m3u"
-SOURCE_URL_2 = "https://raw.githubusercontent.com/BuddyChewChew/sports/refs/heads/main/liveeventsfilter.m3u8"
+SOURCE_URL_2 = "https://raw.githubusercontent.com/doms9/iptv/refs/heads/default/M3U8/events.m3u8"
 
 OUTPUT_FILE = "stv2.m3u"
 LOG_FILE    = "stv2.log"
