@@ -61,22 +61,22 @@ def clean_extinf(line):
         elif channel_name_norm.lower() == "tnt sports 3":
             return '#EXTINF:-1 tvg-id="TNTSports3.uk@HD" tvg-logo="https://raw.githubusercontent.com/didikc/TV-Logo/main/logos/tnt-sports-3-uk.png" ,TNT Sports 3'
         elif channel_name_norm.lower() == "Premier Sports 1":
-            return '#EXTINF:-1 tvg-id="PremierSports1.ie@HD" tvg-logo="" ,Premier Sports 1'
+            return '#EXTINF:-1 tvg-id="PremierSports1.ie@HD" tvg-logo="https://i.imgur.com/eOybZMU.png" ,Premier Sports 1'
         elif channel_name_norm.lower() == "Premier Sports 2":
-            return '#EXTINF:-1 tvg-id="PremierSports2.ie@HD" tvg-logo="" ,Premier Sports 2'
+            return '#EXTINF:-1 tvg-id="PremierSports2.ie@HD" tvg-logo="https://i.imgur.com/Fx1n84p.pn" ,Premier Sports 2'
         elif channel_name_norm.lower() == "Sportv 1":
-            return '#EXTINF:-1 tvg-id="SportTV1.pt@SD" tvg-logo="" ,Sportv 1'
+            return '#EXTINF:-1 tvg-id="SportTV1.pt@SD" tvg-logo="https://i.imgur.com/YWic36u.png" ,Sportv 1'
         elif channel_name_norm.lower() == "Sportv 2":
-            return '#EXTINF:-1 tvg-id="SportTV2.pt@SD" tvg-logo="" ,Sportv 2'
+            return '#EXTINF:-1 tvg-id="SportTV2.pt@SD" tvg-logo="https://i.imgur.com/0jSR6yG.png" ,Sportv 2'
         elif channel_name_norm.lower() == "Sportv 3":
-            return '#EXTINF:-1 tvg-id="SportTV3.pt@SD" tvg-logo="" ,Sportv 3'
+            return '#EXTINF:-1 tvg-id="SportTV3.pt@SD" tvg-logo="https://i.imgur.com/6Dw3GUx.png" ,Sportv 3'
         elif channel_name_norm.lower() == "Tsn 1":
-            return '#EXTINF:-1 tvg-id="TSN1.ca@SD" tvg-logo="" ,TSN 1'            
+            return '#EXTINF:-1 tvg-id="TSN1.ca@SD" tvg-logo="https://i.imgur.com/eRFE0jZ.png" ,TSN 1'            
         elif channel_name_norm.lower() == "Tsn 4":
-            return '#EXTINF:-1 tvg-id="TSN4.ca@SD" tvg-logo="" ,TSN 4'
+            return '#EXTINF:-1 tvg-id="TSN4.ca@SD" tvg-logo="https://i.imgur.com/qJyAWU8.png" ,TSN 4'
         elif channel_name_norm.lower() == "Mutv":
-            return '#EXTINF:-1 tvg-id="MUTV.uk@SD" tvg-logo="" ,MUTV HD'
- 
+            return '#EXTINF:-1 tvg-id="MUTV.uk@SD" tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiDK5wO1M6YOy_2_IuEtYuj25ReGg3p-V3j60gGqa-cd8rz6f9xuH2o4mQVCRN1rApaVMGLT1q-bhDKcYGS4FbkseAgUhNFvAsDug1hI9wg4iFAGY6JAEEHtqsqdSK2A3CaqugX-fctkzTaywaYoaSIY1ZfFQjwdrQX_CNBMT5IpunnbZNpg2QzZuWjcPvt/s700/MUTV.png" ,MUTV HD'
+        
         # Default case: no tvg-id, just clean name
         return f"#EXTINF:-1,{channel_name_norm}"
     return line
