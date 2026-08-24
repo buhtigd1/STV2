@@ -104,8 +104,14 @@ def main():
     entries1 = parse_m3u(source1)
     entries2 = parse_m3u(source2)
 
-    # Only keep Premier League or Formula 1 channels from source2
-    entries2 = [block for block in entries2 if "[premier league]" in block[0].lower() or "[formula 1]" in block[0].lower()]
+    # Only keep Premier League, Formula 1, England Premier League, or Football channels from source2
+    entries2 = [
+        block for block in entries2
+        if "[premier league]" in block[0].lower()
+        or "[formula 1]" in block[0].lower()
+        or "[england premier league]" in block[0].lower()
+        or "[football]" in block[0].lower()
+    ]
 
     entries = entries1 + entries2  # merge both sources
 
