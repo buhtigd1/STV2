@@ -3,7 +3,6 @@ import re
 from datetime import datetime
 
 SOURCE_URL = "https://raw.githubusercontent.com/raid35/docs/main/SPORT_UROP.m3u"
-LIST_URL   = "https://raw.githubusercontent.com/didikc/EPG-7/main/list.txt"
 OUTPUT_FILE = "stv2.m3u"
 LOG_FILE    = "stv2.log"
 
@@ -41,42 +40,18 @@ def parse_m3u(content):
             i += 1
     return entries
 
-def load_tvg_map(list_txt):
-    tvg_map = {}
-    for line in list_txt.splitlines():
-        line = line.strip()
-        if not line or '"' not in line:
-            continue
-        try:
-            tvgid, name = line.split('"', 1)
-            tvgid = tvgid.strip()
-            name = name.strip().strip('"').lower()
-            if tvgid and name:
-                tvg_map[name] = tvgid
-        except ValueError:
-            continue
-    return tvg_map
-
 def clean_extinf(line):
-    # Remove all unwanted attributes
+    # Remove all unwanted attributes including tvg-id, tvg-name, tvg-logo, group-title
     line = re.sub(r'\s*group-title="[^"]+"', '', line, flags=re.IGNORECASE)
     line = re.sub(r'\s*tvg-id="[^"]+"', '', line, flags=re.IGNORECASE)
     line = re.sub(r'\s*tvg-name="[^"]+"', '', line, flags=re.IGNORECASE)
     line = re.sub(r'\s*tvg-logo="[^"]+"', '', line, flags=re.IGNORECASE)
     line = line.replace("|", "")
     line = line.replace(",,", ",")
-    return line
-
-def inject_tvg(line, tvg_map, log_entries):
-    # Extract channel name after the comma
-    name = line.split(",", 1)[-1].lower().strip()
-    for key, tvgid in tvg_map.items():
-        if key in name:
-            # Replace the whole EXTINF header with a clean tvg-id only
-            line = re.sub(r'#EXTINF:-1.*?,', f'#EXTINF:-1 tvg-id="{tvgid}",', line)
-            log_entries.append(f"INJECTED {tvgid} for {name}")
-            return line
-    log_entries.append(f"NO MATCH for {name}")
+    # Ensure EXTINF has no attributes, just channel name
+    if "," in line:
+        channel_name = line.split(",", 1)[-1].strip()
+        line = f"#EXTINF:-1,{channel_name}"
     return line
 
 def is_block_allowed(block, log_entries):
@@ -92,10 +67,6 @@ def is_block_allowed(block, log_entries):
 def main():
     print("Downloading playlist...")
     source = download(SOURCE_URL)
-
-    print("Downloading tvg-id list...")
-    list_txt = download(LIST_URL)
-    tvg_map = load_tvg_map(list_txt)
 
     print("Parsing playlist...")
     entries = parse_m3u(source)
@@ -125,7 +96,6 @@ def main():
             for idx, line in enumerate(block):
                 if idx == 0:
                     line = clean_extinf(line)
-                    line = inject_tvg(line, tvg_map, log_entries)
                 else:
                     line = line.replace("|", "").replace(",,", ",")
                 f.write(line + "\n")
@@ -135,7 +105,6 @@ def main():
             for idx, line in enumerate(block):
                 if idx == 0:
                     line = clean_extinf(line)
-                    line = inject_tvg(line, tvg_map, log_entries)
                 else:
                     line = line.replace("|", "").replace(",,", ",")
                 f.write(line + "\n")
