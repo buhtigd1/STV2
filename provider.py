@@ -1,5 +1,6 @@
 import requests
 import re
+from datetime import datetime
 
 SOURCE_URL = "https://raw.githubusercontent.com/raid35/docs/main/SPORT_UROP.m3u"
 LIST_URL   = "https://raw.githubusercontent.com/didikc/EPG-7/main/list.txt"
@@ -57,16 +58,16 @@ def load_tvg_map(list_txt):
     return tvg_map
 
 def clean_extinf(line):
+    # Remove group-title, tvg-id, tvg-name, and any "|" characters
     line = re.sub(r'\s*group-title="[^"]+"', '', line, flags=re.IGNORECASE)
+    line = re.sub(r'\s*tvg-id="[^"]+"', '', line, flags=re.IGNORECASE)
+    line = re.sub(r'\s*tvg-name="[^"]+"', '', line, flags=re.IGNORECASE)
     line = line.replace("|", "")
     line = line.replace(",,", ",")
     return line
 
 def inject_tvg(line, tvg_map, log_entries):
     name = line.split(",", 1)[-1].lower().strip()
-    if 'tvg-id="' in line:
-        log_entries.append(f"SKIP (already has tvg-id): {name}")
-        return line
     for key, tvgid in tvg_map.items():
         if key in name:
             line = line.replace("#EXTINF:-1", f"#EXTINF:-1 tvg-id=\"{tvgid}\"")
@@ -96,47 +97,23 @@ def main():
     print("Parsing playlist...")
     entries = parse_m3u(source)
 
-    log_entries = []
+    log_entries = [f"Run started at {datetime.now().isoformat()}"]
     print("Filtering...")
     filtered = [block for block in entries if is_block_allowed(block, log_entries)]
 
-    # Separate TNT Sports channels
-    tnt_blocks = []
-    other_blocks = []
-    for block in filtered:
-        header = block[0].lower()
-        if "tnt sports" in header:
-            tnt_blocks.append(block)
-        else:
-            other_blocks.append(block)
-
     print(f"Total channels after filter: {len(filtered)}")
-    print(f"TNT Sports channels prioritized: {len(tnt_blocks)}")
 
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         f.write(HEADER + "\n")
-
-        # Write TNT Sports first
-        for block in tnt_blocks:
+        for block in filtered:
             for idx, line in enumerate(block):
-                if idx == 0:
+                if idx == 0:  # EXTINF line
                     line = clean_extinf(line)
                     line = inject_tvg(line, tvg_map, log_entries)
                 else:
                     line = line.replace("|", "").replace(",,", ",")
                 f.write(line + "\n")
 
-        # Then write the rest
-        for block in other_blocks:
-            for idx, line in enumerate(block):
-                if idx == 0:
-                    line = clean_extinf(line)
-                    line = inject_tvg(line, tvg_map, log_entries)
-                else:
-                    line = line.replace("|", "").replace(",,", ",")
-                f.write(line + "\n")
-
-    # Write log file
     with open(LOG_FILE, "w", encoding="utf-8") as logf:
         for entry in log_entries:
             logf.write(entry + "\n")
