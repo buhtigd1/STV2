@@ -1,11 +1,9 @@
 import requests
 import re
 
-# ✅ Source
 SOURCE_URL = "https://raw.githubusercontent.com/raid35/docs/main/SPORT_UROP.m3u"
 OUTPUT_FILE = "stv2.m3u"
 
-# ✅ Header line
 HEADER = '#EXTM3U x-tvg-url="https://bit.ly/3THSiiN"'
 
 def download(url):
@@ -38,6 +36,10 @@ def parse_m3u(content):
             i += 1
     return entries
 
+def clean_extinf(line):
+    # Remove any group-title attribute
+    return re.sub(r'\s*group-title="[^"]+"', '', line, flags=re.IGNORECASE)
+
 def main():
     print("Downloading playlist...")
     source = download(SOURCE_URL)
@@ -50,7 +52,9 @@ def main():
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         f.write(HEADER + "\n")
         for block in entries:
-            for line in block:
+            for idx, line in enumerate(block):
+                if idx == 0:  # clean only the EXTINF line
+                    line = clean_extinf(line)
                 f.write(line + "\n")
 
     print(f"✅ Done: saved to {OUTPUT_FILE}")
