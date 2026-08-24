@@ -6,7 +6,7 @@ SOURCE_URL = "https://raw.githubusercontent.com/raid35/docs/main/SPORT_UROP.m3u"
 OUTPUT_FILE = "stv2.m3u"
 LOG_FILE    = "stv2.log"
 
-HEADER = '#EXTM3U url-tvg="https://raw.githubusercontent.com/didikc/EPG/master/epg/guide.xml.gz"'
+HEADER = '#EXTM3U url-tvg="https://raw.githubusercontent.com/didikc/EPG-8/main/epg.xml.gz"'
 
 BLACKLIST = ["caze tv 1", "caze tv 2"]
 
