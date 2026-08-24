@@ -48,12 +48,21 @@ def clean_extinf(line):
     line = re.sub(r'\s*tvg-logo="[^"]+"', '', line, flags=re.IGNORECASE)
     line = line.replace("|", "")
     line = line.replace(",,", ",")
-    # Ensure EXTINF has no attributes, just channel name
+
     if "," in line:
         channel_name = line.split(",", 1)[-1].strip()
-        # Normalize capitalization (Title Case)
-        channel_name = channel_name.title()
-        line = f"#EXTINF:-1,{channel_name}"
+        channel_name_norm = channel_name.title()
+
+        # Replace lines
+        if channel_name_norm.lower() == "tnt sports 1":
+            return '#EXTINF:-1 tvg-id="TNTSports1.uk@SD" tvg-logo="http://aptvpix.net/pubs/2022/tntsports.png" ,TNT Sports 1'
+        elif channel_name_norm.lower() == "tnt sports 2":
+            return '#EXTINF:-1 tvg-id="TNTSports2.uk@SD" tvg-logo="http://aptvpix.net/pubs/2022/tntsports.png" ,TNT Sports 2'
+        elif channel_name_norm.lower() == "tnt sports 3":
+            return '#EXTINF:-1 tvg-id="TNTSports3.uk@SD" tvg-logo="http://aptvpix.net/pubs/2022/tntsports.png" ,TNT Sports 3'
+
+        # Default case: no tvg-id, just clean name
+        return f"#EXTINF:-1,{channel_name_norm}"
     return line
 
 def is_block_allowed(block, log_entries):
