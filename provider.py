@@ -41,7 +41,7 @@ def parse_m3u(content):
     return entries
 
 def clean_extinf(line):
-    # Remove all unwanted attributes including tvg-id, tvg-name, tvg-logo, group-title
+    # Remove all unwanted attributes
     line = re.sub(r'\s*group-title="[^"]+"', '', line, flags=re.IGNORECASE)
     line = re.sub(r'\s*tvg-id="[^"]+"', '', line, flags=re.IGNORECASE)
     line = re.sub(r'\s*tvg-name="[^"]+"', '', line, flags=re.IGNORECASE)
@@ -51,6 +51,8 @@ def clean_extinf(line):
     # Ensure EXTINF has no attributes, just channel name
     if "," in line:
         channel_name = line.split(",", 1)[-1].strip()
+        # Normalize capitalization (Title Case)
+        channel_name = channel_name.title()
         line = f"#EXTINF:-1,{channel_name}"
     return line
 
