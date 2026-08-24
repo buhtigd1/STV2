@@ -111,6 +111,9 @@ def main():
         or "[formula 1]" in block[0].lower()
         or "[england premier league]" in block[0].lower()
         or "[football]" in block[0].lower()
+        or "[laliga]" in block[0].lower()
+        or "[serie a]" in block[0].lower()
+        or "[italy serie a]" in block[0].lower()       
     ]
 
     entries = entries1 + entries2  # merge both sources
