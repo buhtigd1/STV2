@@ -58,7 +58,6 @@ def load_tvg_map(list_txt):
     return tvg_map
 
 def clean_extinf(line):
-    # Remove group-title, tvg-id, tvg-name, and any "|" characters
     line = re.sub(r'\s*group-title="[^"]+"', '', line, flags=re.IGNORECASE)
     line = re.sub(r'\s*tvg-id="[^"]+"', '', line, flags=re.IGNORECASE)
     line = re.sub(r'\s*tvg-name="[^"]+"', '', line, flags=re.IGNORECASE)
@@ -101,13 +100,36 @@ def main():
     print("Filtering...")
     filtered = [block for block in entries if is_block_allowed(block, log_entries)]
 
+    # Separate TNT Sports channels
+    tnt_blocks = []
+    other_blocks = []
+    for block in filtered:
+        header = block[0].lower()
+        if "tnt sports" in header:
+            tnt_blocks.append(block)
+        else:
+            other_blocks.append(block)
+
     print(f"Total channels after filter: {len(filtered)}")
+    print(f"TNT Sports channels prioritized: {len(tnt_blocks)}")
 
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         f.write(HEADER + "\n")
-        for block in filtered:
+
+        # Write TNT Sports first
+        for block in tnt_blocks:
             for idx, line in enumerate(block):
-                if idx == 0:  # EXTINF line
+                if idx == 0:
+                    line = clean_extinf(line)
+                    line = inject_tvg(line, tvg_map, log_entries)
+                else:
+                    line = line.replace("|", "").replace(",,", ",")
+                f.write(line + "\n")
+
+        # Then write the rest
+        for block in other_blocks:
+            for idx, line in enumerate(block):
+                if idx == 0:
                     line = clean_extinf(line)
                     line = inject_tvg(line, tvg_map, log_entries)
                 else:
