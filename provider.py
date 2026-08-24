@@ -2,9 +2,10 @@ import requests
 import re
 
 SOURCE_URL = "https://raw.githubusercontent.com/raid35/docs/main/SPORT_UROP.m3u"
+LIST_URL   = "https://raw.githubusercontent.com/didikc/EPG-7/main/list.txt"
 OUTPUT_FILE = "stv2.m3u"
 
-HEADER = '#EXTM3U url-tvg="https://bit.ly/3THSiiN"'
+HEADER = '#EXTM3U x-tvg-url="https://bit.ly/3THSiiN"'
 
 def download(url):
     try:
@@ -36,48 +37,68 @@ def parse_m3u(content):
             i += 1
     return entries
 
+def load_tvg_map(list_txt):
+    """
+    Parse list.txt which has lines like:
+    tvg-id "Channel Name"
+    """
+    tvg_map = {}
+    for line in list_txt.splitlines():
+        line = line.strip()
+        if not line or '"' not in line:
+            continue
+        try:
+            tvgid, name = line.split('"', 1)
+            tvgid = tvgid.strip()
+            name = name.strip().strip('"').lower()
+            if tvgid and name:
+                tvg_map[name] = tvgid
+        except ValueError:
+            continue
+    return tvg_map
+
 def clean_extinf(line):
-    # Remove group-title and any "|" characters
+    # Remove group-title and any "|" characters, fix double commas
     line = re.sub(r'\s*group-title="[^"]+"', '', line, flags=re.IGNORECASE)
     line = line.replace("|", "")
     line = line.replace(",,", ",")
     return line
 
-def clean_line(line):
-    # General cleanup for non-EXTINF lines
-    line = line.replace("|", "")
-    line = line.replace(",,", ",")
+def inject_tvg(line, tvg_map):
+    """
+    Inject tvg-id if channel name matches list.txt
+    """
+    name = line.split(",", 1)[-1].lower().strip()
+    if 'tvg-id="' in line:
+        return line
+    for key, tvgid in tvg_map.items():
+        if key in name:
+            line = line.replace("#EXTINF:-1", f"#EXTINF:-1 tvg-id=\"{tvgid}\"")
+            break
     return line
-
-def is_block_allowed(block):
-    """Skip CAZE TV 1 and CAZE TV 2"""
-    if not block:
-        return False
-    header = block[0].lower()
-    if "caze tv 1" in header or "caze tv 2" in header:
-        return False
-    return True
 
 def main():
     print("Downloading playlist...")
     source = download(SOURCE_URL)
 
+    print("Downloading tvg-id list...")
+    list_txt = download(LIST_URL)
+    tvg_map = load_tvg_map(list_txt)
+
     print("Parsing playlist...")
     entries = parse_m3u(source)
 
-    print("Filtering...")
-    filtered = [block for block in entries if is_block_allowed(block)]
-
-    print(f"Total channels after filter: {len(filtered)}")
+    print(f"Total channels found: {len(entries)}")
 
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         f.write(HEADER + "\n")
-        for block in filtered:
+        for block in entries:
             for idx, line in enumerate(block):
                 if idx == 0:  # EXTINF line
                     line = clean_extinf(line)
-                else:         # URL or other lines
-                    line = clean_line(line)
+                    line = inject_tvg(line, tvg_map)
+                else:
+                    line = line.replace("|", "").replace(",,", ",")
                 f.write(line + "\n")
 
     print(f"✅ Done: saved to {OUTPUT_FILE}")
