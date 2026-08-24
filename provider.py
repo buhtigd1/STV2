@@ -37,8 +37,18 @@ def parse_m3u(content):
     return entries
 
 def clean_extinf(line):
-    # Remove any group-title attribute
-    return re.sub(r'\s*group-title="[^"]+"', '', line, flags=re.IGNORECASE)
+    # Remove group-title and any "|" characters
+    line = re.sub(r'\s*group-title="[^"]+"', '', line, flags=re.IGNORECASE)
+    line = line.replace("|", "")
+    # Replace double commas with single comma
+    line = line.replace(",,", ",")
+    return line
+
+def clean_line(line):
+    # General cleanup for non-EXTINF lines
+    line = line.replace("|", "")
+    line = line.replace(",,", ",")
+    return line
 
 def main():
     print("Downloading playlist...")
@@ -53,8 +63,10 @@ def main():
         f.write(HEADER + "\n")
         for block in entries:
             for idx, line in enumerate(block):
-                if idx == 0:  # clean only the EXTINF line
+                if idx == 0:  # EXTINF line
                     line = clean_extinf(line)
+                else:         # URL or other lines
+                    line = clean_line(line)
                 f.write(line + "\n")
 
     print(f"✅ Done: saved to {OUTPUT_FILE}")
