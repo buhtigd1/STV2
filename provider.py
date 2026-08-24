@@ -6,7 +6,7 @@ SOURCE_URL = "https://raw.githubusercontent.com/raid35/docs/main/SPORT_UROP.m3u"
 OUTPUT_FILE = "stv2.m3u"
 LOG_FILE    = "stv2.log"
 
-HEADER = '#EXTM3U x-tvg-url="https://bit.ly/3THSiiN"'
+HEADER = '#EXTM3U url-tvg="https://bit.ly/3THSiiN"'
 
 BLACKLIST = ["caze tv 1", "caze tv 2"]
 
@@ -55,11 +55,11 @@ def clean_extinf(line):
 
         # Replace lines
         if channel_name_norm.lower() == "tnt sports 1":
-            return '#EXTINF:-1 tvg-id="TNTSports1.uk@SD" tvg-logo="http://aptvpix.net/pubs/2022/tntsports.png" ,TNT Sports 1'
+            return '#EXTINF:-1 tvg-id="TNTSports1.uk@SD" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu2mxmL_CPC110vKGsvn1MfZUo8FH_8KsmEZk983ew2Q&s=10" ,TNT Sports 1'
         elif channel_name_norm.lower() == "tnt sports 2":
-            return '#EXTINF:-1 tvg-id="TNTSports2.uk@SD" tvg-logo="http://aptvpix.net/pubs/2022/tntsports.png" ,TNT Sports 2'
+            return '#EXTINF:-1 tvg-id="TNTSports2.uk@SD" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu2mxmL_CPC110vKGsvn1MfZUo8FH_8KsmEZk983ew2Q&s=10" ,TNT Sports 2'
         elif channel_name_norm.lower() == "tnt sports 3":
-            return '#EXTINF:-1 tvg-id="TNTSports3.uk@SD" tvg-logo="http://aptvpix.net/pubs/2022/tntsports.png" ,TNT Sports 3'
+            return '#EXTINF:-1 tvg-id="TNTSports3.uk@SD" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu2mxmL_CPC110vKGsvn1MfZUo8FH_8KsmEZk983ew2Q&s=10" ,TNT Sports 3'
 
         # Default case: no tvg-id, just clean name
         return f"#EXTINF:-1,{channel_name_norm}"
