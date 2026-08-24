@@ -4,7 +4,7 @@ import re
 SOURCE_URL = "https://raw.githubusercontent.com/raid35/docs/main/SPORT_UROP.m3u"
 OUTPUT_FILE = "stv2.m3u"
 
-HEADER = '#EXTM3U x-tvg-url="https://bit.ly/3THSiiN"'
+HEADER = '#EXTM3U url-tvg="https://bit.ly/3THSiiN"'
 
 def download(url):
     try:
@@ -40,7 +40,6 @@ def clean_extinf(line):
     # Remove group-title and any "|" characters
     line = re.sub(r'\s*group-title="[^"]+"', '', line, flags=re.IGNORECASE)
     line = line.replace("|", "")
-    # Replace double commas with single comma
     line = line.replace(",,", ",")
     return line
 
@@ -50,6 +49,15 @@ def clean_line(line):
     line = line.replace(",,", ",")
     return line
 
+def is_block_allowed(block):
+    """Skip CAZE TV 1 and CAZE TV 2"""
+    if not block:
+        return False
+    header = block[0].lower()
+    if "caze tv 1" in header or "caze tv 2" in header:
+        return False
+    return True
+
 def main():
     print("Downloading playlist...")
     source = download(SOURCE_URL)
@@ -57,11 +65,14 @@ def main():
     print("Parsing playlist...")
     entries = parse_m3u(source)
 
-    print(f"Total channels found: {len(entries)}")
+    print("Filtering...")
+    filtered = [block for block in entries if is_block_allowed(block)]
+
+    print(f"Total channels after filter: {len(filtered)}")
 
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         f.write(HEADER + "\n")
-        for block in entries:
+        for block in filtered:
             for idx, line in enumerate(block):
                 if idx == 0:  # EXTINF line
                     line = clean_extinf(line)
