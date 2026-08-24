@@ -230,3 +230,8 @@ https://edgestream2.pro/hls/377qj1h2727.m3u8
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
 https://cdn11.zohanayaan.com:1686/hls/nfulham.m3u8?md5=lo5YMprJav_RfpGJAmFELA&expires=1787603450
+#EXTINF:-1,[Premier League] Fulham Vs Chelsea (Istrmeast)
+#EXTVLCOPT:http-referrer=https://gooz.aapmains.net/new-stream-embed/55163?ad=111
+#EXTVLCOPT:http-origin=https://gooz.aapmains.net/new-stream-embed/55163?ad=111
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://chatgpt.hereisman.net/playlist/55163/load-playlist
