@@ -2,7 +2,9 @@ import requests
 import re
 from datetime import datetime
 
-SOURCE_URL = "https://raw.githubusercontent.com/raid35/docs/main/SPORT_UROP.m3u"
+SOURCE_URL_1 = "https://raw.githubusercontent.com/raid35/docs/main/SPORT_UROP.m3u"
+SOURCE_URL_2 = "https://raw.githubusercontent.com/BuddyChewChew/sports/refs/heads/main/liveeventsfilter.m3u8"
+
 OUTPUT_FILE = "stv2.m3u"
 LOG_FILE    = "stv2.log"
 
@@ -53,31 +55,33 @@ def clean_extinf(line):
         channel_name = line.split(",", 1)[-1].strip()
         channel_name_norm = channel_name.title()
 
-        # Replace lines
+        # Custom replacements
         if channel_name_norm.lower() == "tnt sports 1":
             return '#EXTINF:-1 tvg-id="TNTSports1.uk@HD" tvg-logo="https://raw.githubusercontent.com/didikc/TV-Logo/main/logos/tnt-sports-1-uk.png" ,TNT Sports 1'
         elif channel_name_norm.lower() == "tnt sports 2":
             return '#EXTINF:-1 tvg-id="TNTSports2.uk@HD" tvg-logo="https://raw.githubusercontent.com/didikc/TV-Logo/main/logos/tnt-sports-2-uk.png" ,TNT Sports 2'
         elif channel_name_norm.lower() == "tnt sports 3":
             return '#EXTINF:-1 tvg-id="TNTSports3.uk@HD" tvg-logo="https://raw.githubusercontent.com/didikc/TV-Logo/main/logos/tnt-sports-3-uk.png" ,TNT Sports 3'
-        elif channel_name_norm.lower() == "Premier Sports 1":
+        elif channel_name_norm.lower() == "premier sports 1":
             return '#EXTINF:-1 tvg-id="PremierSports1.ie@HD" tvg-logo="https://i.imgur.com/eOybZMU.png" ,Premier Sports 1'
-        elif channel_name_norm.lower() == "Premier Sports 2":
-            return '#EXTINF:-1 tvg-id="PremierSports2.ie@HD" tvg-logo="https://i.imgur.com/Fx1n84p.pn" ,Premier Sports 2'
-        elif channel_name_norm.lower() == "Sportv 1":
+        elif channel_name_norm.lower() == "premier sports 2":
+            return '#EXTINF:-1 tvg-id="PremierSports2.ie@HD" tvg-logo="https://i.imgur.com/Fx1n84p.png" ,Premier Sports 2'
+        elif channel_name_norm.lower() == "sportv 1":
             return '#EXTINF:-1 tvg-id="SportTV1.pt@SD" tvg-logo="https://i.imgur.com/YWic36u.png" ,Sportv 1'
-        elif channel_name_norm.lower() == "Sportv 2":
+        elif channel_name_norm.lower() == "sportv 2":
             return '#EXTINF:-1 tvg-id="SportTV2.pt@SD" tvg-logo="https://i.imgur.com/0jSR6yG.png" ,Sportv 2'
-        elif channel_name_norm.lower() == "Sportv 3":
+        elif channel_name_norm.lower() == "sportv 3":
             return '#EXTINF:-1 tvg-id="SportTV3.pt@SD" tvg-logo="https://i.imgur.com/6Dw3GUx.png" ,Sportv 3'
-        elif channel_name_norm.lower() == "Tsn 1":
-            return '#EXTINF:-1 tvg-id="TSN1.ca@SD" tvg-logo="https://i.imgur.com/eRFE0jZ.png" ,TSN 1'            
-        elif channel_name_norm.lower() == "Tsn 4":
+        elif channel_name_norm.lower() == "tsn 1":
+            return '#EXTINF:-1 tvg-id="TSN1.ca@SD" tvg-logo="https://i.imgur.com/eRFE0jZ.png" ,TSN 1'
+        elif channel_name_norm.lower() == "tsn 4":
             return '#EXTINF:-1 tvg-id="TSN4.ca@SD" tvg-logo="https://i.imgur.com/qJyAWU8.png" ,TSN 4'
-        elif channel_name_norm.lower() == "Mutv":
+        elif channel_name_norm.lower() == "mutv":
             return '#EXTINF:-1 tvg-id="MUTV.uk@SD" tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiDK5wO1M6YOy_2_IuEtYuj25ReGg3p-V3j60gGqa-cd8rz6f9xuH2o4mQVCRN1rApaVMGLT1q-bhDKcYGS4FbkseAgUhNFvAsDug1hI9wg4iFAGY6JAEEHtqsqdSK2A3CaqugX-fctkzTaywaYoaSIY1ZfFQjwdrQX_CNBMT5IpunnbZNpg2QzZuWjcPvt/s700/MUTV.png" ,MUTV HD'
-        
-        # Default case: no tvg-id, just clean name
+        elif channel_name_norm.lower() == "cbs sports yedek":
+            return '#EXTINF:-1 tvg-id="CBSSportsYedek.tr@SD" tvg-logo="https://raw.githubusercontent.com/didikc/TV-Logo/main/logos/cbs-sports-yedek.png" ,CBS Sports Yedek'
+
+        # Default case
         return f"#EXTINF:-1,{channel_name_norm}"
     return line
 
@@ -92,11 +96,18 @@ def is_block_allowed(block, log_entries):
     return True
 
 def main():
-    print("Downloading playlist...")
-    source = download(SOURCE_URL)
+    print("Downloading playlists...")
+    source1 = download(SOURCE_URL_1)
+    source2 = download(SOURCE_URL_2)
 
-    print("Parsing playlist...")
-    entries = parse_m3u(source)
+    print("Parsing playlists...")
+    entries1 = parse_m3u(source1)
+    entries2 = parse_m3u(source2)
+
+    # Only keep Premier League or Formula 1 channels from source2
+    entries2 = [block for block in entries2 if "[premier league]" in block[0].lower() or "[formula 1]" in block[0].lower()]
+
+    entries = entries1 + entries2  # merge both sources
 
     log_entries = [f"Run started at {datetime.now().isoformat()}"]
     print("Filtering...")
