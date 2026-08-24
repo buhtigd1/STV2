@@ -4,8 +4,12 @@ import re
 SOURCE_URL = "https://raw.githubusercontent.com/raid35/docs/main/SPORT_UROP.m3u"
 LIST_URL   = "https://raw.githubusercontent.com/didikc/EPG-7/main/list.txt"
 OUTPUT_FILE = "stv2.m3u"
+LOG_FILE    = "stv2.log"
 
 HEADER = '#EXTM3U x-tvg-url="https://bit.ly/3THSiiN"'
+
+# ✅ Blacklist channels
+BLACKLIST = ["caze tv 1", "caze tv 2"]
 
 def download(url):
     try:
@@ -38,10 +42,6 @@ def parse_m3u(content):
     return entries
 
 def load_tvg_map(list_txt):
-    """
-    Parse list.txt which has lines like:
-    tvg-id "Channel Name"
-    """
     tvg_map = {}
     for line in list_txt.splitlines():
         line = line.strip()
@@ -58,24 +58,33 @@ def load_tvg_map(list_txt):
     return tvg_map
 
 def clean_extinf(line):
-    # Remove group-title and any "|" characters, fix double commas
     line = re.sub(r'\s*group-title="[^"]+"', '', line, flags=re.IGNORECASE)
     line = line.replace("|", "")
     line = line.replace(",,", ",")
     return line
 
-def inject_tvg(line, tvg_map):
-    """
-    Inject tvg-id if channel name matches list.txt
-    """
+def inject_tvg(line, tvg_map, log_entries):
     name = line.split(",", 1)[-1].lower().strip()
     if 'tvg-id="' in line:
+        log_entries.append(f"SKIP (already has tvg-id): {name}")
         return line
     for key, tvgid in tvg_map.items():
         if key in name:
             line = line.replace("#EXTINF:-1", f"#EXTINF:-1 tvg-id=\"{tvgid}\"")
-            break
+            log_entries.append(f"INJECTED {tvgid} for {name}")
+            return line
+    log_entries.append(f"NO MATCH for {name}")
     return line
+
+def is_block_allowed(block, log_entries):
+    if not block:
+        return False
+    header = block[0].lower()
+    for bad in BLACKLIST:
+        if bad in header:
+            log_entries.append(f"BLACKLISTED: {header}")
+            return False
+    return True
 
 def main():
     print("Downloading playlist...")
@@ -88,20 +97,29 @@ def main():
     print("Parsing playlist...")
     entries = parse_m3u(source)
 
-    print(f"Total channels found: {len(entries)}")
+    log_entries = []
+    print("Filtering...")
+    filtered = [block for block in entries if is_block_allowed(block, log_entries)]
+
+    print(f"Total channels after filter: {len(filtered)}")
 
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         f.write(HEADER + "\n")
-        for block in entries:
+        for block in filtered:
             for idx, line in enumerate(block):
                 if idx == 0:  # EXTINF line
                     line = clean_extinf(line)
-                    line = inject_tvg(line, tvg_map)
+                    line = inject_tvg(line, tvg_map, log_entries)
                 else:
                     line = line.replace("|", "").replace(",,", ",")
                 f.write(line + "\n")
 
-    print(f"✅ Done: saved to {OUTPUT_FILE}")
+    # Write log file
+    with open(LOG_FILE, "w", encoding="utf-8") as logf:
+        for entry in log_entries:
+            logf.write(entry + "\n")
+
+    print(f"✅ Done: saved to {OUTPUT_FILE}, log written to {LOG_FILE}")
 
 if __name__ == "__main__":
     main()
