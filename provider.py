@@ -58,18 +58,22 @@ def load_tvg_map(list_txt):
     return tvg_map
 
 def clean_extinf(line):
+    # Remove group-title, tvg-id, tvg-name, tvg-logo, and any "|" characters
     line = re.sub(r'\s*group-title="[^"]+"', '', line, flags=re.IGNORECASE)
     line = re.sub(r'\s*tvg-id="[^"]+"', '', line, flags=re.IGNORECASE)
     line = re.sub(r'\s*tvg-name="[^"]+"', '', line, flags=re.IGNORECASE)
+    line = re.sub(r'\s*tvg-logo="[^"]+"', '', line, flags=re.IGNORECASE)
     line = line.replace("|", "")
     line = line.replace(",,", ",")
     return line
 
 def inject_tvg(line, tvg_map, log_entries):
+    # Extract channel name after the comma
     name = line.split(",", 1)[-1].lower().strip()
     for key, tvgid in tvg_map.items():
         if key in name:
-            line = line.replace("#EXTINF:-1", f"#EXTINF:-1 tvg-id=\"{tvgid}\"")
+            # Replace the base EXTINF with a fresh tvg-id only
+            line = re.sub(r'#EXTINF:-1.*?,', f'#EXTINF:-1 tvg-id="{tvgid}",', line)
             log_entries.append(f"INJECTED {tvgid} for {name}")
             return line
     log_entries.append(f"NO MATCH for {name}")
@@ -136,6 +140,7 @@ def main():
                     line = line.replace("|", "").replace(",,", ",")
                 f.write(line + "\n")
 
+    # Write log file
     with open(LOG_FILE, "w", encoding="utf-8") as logf:
         for entry in log_entries:
             logf.write(entry + "\n")
