@@ -1,8 +1,12 @@
 import requests
 import re
 
+# ✅ Source
 SOURCE_URL = "https://raw.githubusercontent.com/raid35/docs/main/SPORT_UROP.m3u"
 OUTPUT_FILE = "stv2.m3u"
+
+# ✅ Header line
+HEADER = '#EXTM3U x-tvg-url="https://bit.ly/3THSiiN"'
 
 def download(url):
     try:
@@ -44,7 +48,7 @@ def main():
     print(f"Total channels found: {len(entries)}")
 
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-        f.write("#EXTM3U x-tvg-url="https://bit.ly/3THSiiN"\n")
+        f.write(HEADER + "\n")
         for block in entries:
             for line in block:
                 f.write(line + "\n")
