@@ -60,7 +60,23 @@ def clean_extinf(line):
             return '#EXTINF:-1 tvg-id="TNTSports2.uk@HD" tvg-logo="https://raw.githubusercontent.com/didikc/TV-Logo/main/logos/tnt-sports-2-uk.png" ,TNT Sports 2'
         elif channel_name_norm.lower() == "tnt sports 3":
             return '#EXTINF:-1 tvg-id="TNTSports3.uk@HD" tvg-logo="https://raw.githubusercontent.com/didikc/TV-Logo/main/logos/tnt-sports-3-uk.png" ,TNT Sports 3'
-
+        elif channel_name_norm.lower() == "Premier Sports 1":
+            return '#EXTINF:-1 tvg-id="PremierSports1.ie@HD" tvg-logo="" ,Premier Sports 1'
+        elif channel_name_norm.lower() == "Premier Sports 2":
+            return '#EXTINF:-1 tvg-id="PremierSports2.ie@HD" tvg-logo="" ,Premier Sports 2'
+        elif channel_name_norm.lower() == "Sportv 1":
+            return '#EXTINF:-1 tvg-id="SportTV1.pt@SD" tvg-logo="" ,Sportv 1'
+        elif channel_name_norm.lower() == "Sportv 2":
+            return '#EXTINF:-1 tvg-id="SportTV2.pt@SD" tvg-logo="" ,Sportv 2'
+        elif channel_name_norm.lower() == "Sportv 3":
+            return '#EXTINF:-1 tvg-id="SportTV3.pt@SD" tvg-logo="" ,Sportv 3'
+        elif channel_name_norm.lower() == "Tsn 1":
+            return '#EXTINF:-1 tvg-id="TSN1.ca@SD" tvg-logo="" ,TSN 1'            
+        elif channel_name_norm.lower() == "Tsn 4":
+            return '#EXTINF:-1 tvg-id="TSN4.ca@SD" tvg-logo="" ,TSN 4'
+        elif channel_name_norm.lower() == "Mutv":
+            return '#EXTINF:-1 tvg-id="MUTV.uk@SD" tvg-logo="" ,MUTV HD'
+ 
         # Default case: no tvg-id, just clean name
         return f"#EXTINF:-1,{channel_name_norm}"
     return line
