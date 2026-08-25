@@ -2,8 +2,7 @@ import requests
 import re
 from datetime import datetime
 
-SOURCE_URL_1 = "https://raw.githubusercontent.com/raid35/docs/main/SPORT_UROP.m3u"
-SOURCE_URL_2 = "https://raw.githubusercontent.com/doms9/iptv/refs/heads/default/M3U8/events.m3u8"
+SOURCE_URL = "https://raw.githubusercontent.com/raid35/docs/main/SPORT_UROP.m3u"
 
 OUTPUT_FILE = "stv2.m3u"
 LOG_FILE    = "stv2.log"
@@ -96,27 +95,11 @@ def is_block_allowed(block, log_entries):
     return True
 
 def main():
-    print("Downloading playlists...")
-    source1 = download(SOURCE_URL_1)
-    source2 = download(SOURCE_URL_2)
+    print("Downloading playlist...")
+    source = download(SOURCE_URL)
 
-    print("Parsing playlists...")
-    entries1 = parse_m3u(source1)
-    entries2 = parse_m3u(source2)
-
-    # Only keep Premier League, Formula 1, England Premier League, or Football channels from source2
-    entries2 = [
-        block for block in entries2
-        if "[premier league]" in block[0].lower()
-        or "[formula 1]" in block[0].lower()
-        or "[england premier league]" in block[0].lower()
-        or "[football]" in block[0].lower()
-        or "[laliga]" in block[0].lower()
-        or "[serie a]" in block[0].lower()
-        or "[italy serie a]" in block[0].lower()       
-    ]
-
-    entries = entries1 + entries2  # merge both sources
+    print("Parsing playlist...")
+    entries = parse_m3u(source)
 
     log_entries = [f"Run started at {datetime.now().isoformat()}"]
     print("Filtering...")
