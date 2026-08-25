@@ -77,9 +77,23 @@ def clean_extinf(line):
             return '#EXTINF:-1 tvg-id="TSN4.ca@SD" tvg-logo="https://i.imgur.com/qJyAWU8.png" ,TSN 4'
         elif channel_name_norm.lower() == "mutv":
             return '#EXTINF:-1 tvg-id="MUTV.uk@SD" tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiDK5wO1M6YOy_2_IuEtYuj25ReGg3p-V3j60gGqa-cd8rz6f9xuH2o4mQVCRN1rApaVMGLT1q-bhDKcYGS4FbkseAgUhNFvAsDug1hI9wg4iFAGY6JAEEHtqsqdSK2A3CaqugX-fctkzTaywaYoaSIY1ZfFQjwdrQX_CNBMT5IpunnbZNpg2QzZuWjcPvt/s700/MUTV.png" ,MUTV HD'
-        elif channel_name_norm.lower() == "cbs sports yedek":
-            return '#EXTINF:-1 tvg-id="CBSSportsYedek.tr@SD" tvg-logo="https://raw.githubusercontent.com/didikc/TV-Logo/main/logos/cbs-sports-yedek.png" ,CBS Sports Yedek'
-
+        elif channel_name_norm.lower() == "cbcsportyedek":
+            return '#EXTINF:-1 tvg-id="" tvg-logo="" ,CBC Sport Yedek'
+        elif channel_name_norm.lower() == "fox sports 1 hd":
+            return '#EXTINF:-1 tvg-id="" tvg-logo="https://raw.githubusercontent.com/didikc/TV-Logo/main/logos/foxsports1.png" ,Fox Sports 1'
+        elif channel_name_norm.lower() == "fox sports 1":
+            return '#EXTINF:-1 tvg-id="" tvg-logo="https://raw.githubusercontent.com/didikc/TV-Logo/main/logos/foxsports1.png" ,Fox Sports 1'
+        elif channel_name_norm.lower() == "fox sports 2":
+            return '#EXTINF:-1 tvg-id="" tvg-logo="https://raw.githubusercontent.com/didikc/TV-Logo/main/logos/foxsports2.png" ,Fox Sports 2'
+        elif channel_name_norm.lower() == "fox sports 3":
+            return '#EXTINF:-1 tvg-id="" tvg-logo="https://raw.githubusercontent.com/didikc/TV-Logo/main/logos/foxsports3.png" ,Fox Sports 3'
+        elif channel_name_norm.lower() == "fx sports 2":
+            return '#EXTINF:-1 tvg-id="" tvg-logo="https://raw.githubusercontent.com/didikc/TV-Logo/main/logos/foxsports3.png" ,Fox Sports 2'
+        elif channel_name_norm.lower() == "fx prem":
+            return '#EXTINF:-1 tvg-id="" tvg-logo="" ,Fox Premium'
+        elif channel_name_norm.lower() == "nba tv":
+            return '#EXTINF:-1 tvg-id="" tvg-logo="https://raw.githubusercontent.com/didikc/TV-Logo/main/logos/nbatv.png" ,NBA TV'
+        
         # Default case
         return f"#EXTINF:-1,{channel_name_norm}"
     return line
