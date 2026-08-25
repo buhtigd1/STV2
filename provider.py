@@ -88,7 +88,7 @@ def clean_extinf(line):
         elif channel_name_norm.lower() == "fox sports 3":
             return '#EXTINF:-1 tvg-id="" tvg-logo="https://raw.githubusercontent.com/didikc/TV-Logo/main/logos/foxsports3.png" ,Fox Sports 3'
         elif channel_name_norm.lower() == "fx sports 2":
-            return '#EXTINF:-1 tvg-id="" tvg-logo="https://raw.githubusercontent.com/didikc/TV-Logo/main/logos/foxsports3.png" ,Fox Sports 2'
+            return '#EXTINF:-1 tvg-id="" tvg-logo="https://raw.githubusercontent.com/didikc/TV-Logo/main/logos/foxsports2.png" ,Fox Sports 2'
         elif channel_name_norm.lower() == "fx prem":
             return '#EXTINF:-1 tvg-id="" tvg-logo="" ,Fox Premium'
         elif channel_name_norm.lower() == "nba tv":
