@@ -170,183 +170,33 @@ https://rmtv.akamaized.net/hls/live/2043153/rmtv-es-web/bitrate_3.m3u8
 #EXTVLCOPT:http-origin=https://streame.center
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
 https://edgestream2.pro/hls/syaLqucEne4k.m3u8
-#EXTINF:-1,[Italy Serie A] As Roma Vs Fiorentina 1 (Fawa)
-#EXTVLCOPT:http-referrer=http://www.fawanews.sc/
-#EXTVLCOPT:http-origin=http://www.fawanews.sc/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-http://193.47.62.41/hls/dbbbbaaa.m3u8
-#EXTINF:-1,[Italy Serie A] As Roma Vs Fiorentina 2 (Fawa)
-#EXTVLCOPT:http-referrer=http://www.fawanews.sc/
-#EXTVLCOPT:http-origin=http://www.fawanews.sc/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://play2.315nb.com/live/71944902_ed704ec5fa5fc75a6015303c958b75f1.m3u8?auth_key=6387611277-2-0-d9f59d7ff297fb94404ea9135651d8302
-#EXTINF:-1,[Laliga] Málaga Vs Deportivo La Coruña 1 (Stp)
-#EXTVLCOPT:http-referrer=https://streamtp-golden1.click/global1.php?stream=dsports
-#EXTVLCOPT:http-origin=https://streamtp-golden1.click/global1.php?stream=dsports
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://s1.tudeporteshoy.xyz:443/global/dsports/index.m3u8?token=08eb845c40ce08e17e7ea818c6c2ff1144e3badd-95-1787641250-1787587250
-#EXTINF:-1,[Laliga] Málaga Vs Deportivo La Coruña 2 (Stp)
-#EXTVLCOPT:http-referrer=https://streamtp-golden1.click/global1.php?stream=espndeportes
-#EXTVLCOPT:http-origin=https://streamtp-golden1.click/global1.php?stream=espndeportes
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://s1.tudeporteshoy.xyz:443/global/espndeportes/index.m3u8?token=088c468c212e688038d828be2b0d05c88ce95bd7-08-1787641250-1787587250
-#EXTINF:-1,[Laliga] Málaga Vs Deportivo La Coruña 3 (Stp)
-#EXTVLCOPT:http-referrer=https://streamtp-golden1.click/global1.php?stream=premier1uk
-#EXTVLCOPT:http-origin=https://streamtp-golden1.click/global1.php?stream=premier1uk
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://po.tudeporteshoy.xyz:443/global/premier1uk/index.m3u8?token=4b8639ee43af9982b090b88d6a6e043dc370e663-e2-1787641250-1787587250
-#EXTINF:-1,[Laliga] Málaga Vs Deportivo La Coruña  Español 1 (Plibre)
-#EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=dsports2
-#EXTVLCOPT:http-origin=https://la18hd.su/vivo/canales.php?stream=dsports2
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://y2fzdgxl.fubo18.com:443/dsports2/mono.m3u8?token=7ddefdf4081f34a5730fd579c5a23e605844c205-a0-1787613351-1787595351
-#EXTINF:-1,[Laliga] Málaga Vs Deportivo La Coruña  Español 1 (Stp)
-#EXTVLCOPT:http-referrer=https://streamtp-golden1.click/global1.php?stream=espnplus2
-#EXTVLCOPT:http-origin=https://streamtp-golden1.click/global1.php?stream=espnplus2
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://s2.tudeporteshoy.xyz:443/global/espnplus2/index.m3u8?token=7813afa552f45a05183a4c3948ba367d93f34b51-db-1787641250-1787587250
-#EXTINF:-1,[Laliga] Málaga Vs Deportivo La Coruña  Español 2 (Plibre)
-#EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=espndeportes
-#EXTVLCOPT:http-origin=https://la18hd.su/vivo/canales.php?stream=espndeportes
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://a2lja3m.fubo18.com:443/espndeportes/mono.m3u8?token=b310f5df084ae8bbe580e89166c4303c045f4908-3b-1787613351-1787595351
-#EXTINF:-1,[Laliga] Málaga Vs Deportivo La Coruña  Español 3 (Plibre)
-#EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=sky_sports_laliga
-#EXTVLCOPT:http-origin=https://la18hd.su/vivo/canales.php?stream=sky_sports_laliga
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://y2fzdgxl.fubo18.com:443/sky_sports_laliga/mono.m3u8?token=7524bfe8226a986401ccf039990052147686358e-5b-1787613351-1787595351
-#EXTINF:-1,[Laliga] Osasuna Vs Levante 1 (Stp)
-#EXTVLCOPT:http-referrer=https://streamtp-golden1.click/global1.php?stream=disney2
-#EXTVLCOPT:http-origin=https://streamtp-golden1.click/global1.php?stream=disney2
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://se.tudeporteshoy.xyz:443/global/disney2/index.m3u8?token=1741e72c61be1f5d16a2249acf2683cb3f0a99c9-e3-1787641249-1787587249
-#EXTINF:-1,[Laliga] Osasuna Vs Levante 2 (Stp)
-#EXTVLCOPT:http-referrer=https://streamtp-golden1.click/global1.php?stream=espn3col
-#EXTVLCOPT:http-origin=https://streamtp-golden1.click/global1.php?stream=espn3col
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://sa.tudeporteshoy.xyz:443/global/espn3col/index.m3u8?token=5897cae04f315fe9b4c51d9e9292fdb44c790887-b2-1787641249-1787587249
-#EXTINF:-1,[Laliga] Osasuna Vs Levante 3 (Stp)
-#EXTVLCOPT:http-referrer=https://streamtp-golden1.click/global1.php?stream=espndeportes
-#EXTVLCOPT:http-origin=https://streamtp-golden1.click/global1.php?stream=espndeportes
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://s2.tudeporteshoy.xyz:443/global/espndeportes/index.m3u8?token=b5c37a010ef2def29f5aba94d8d44fec416fbe34-3c-1787641249-1787587249
-#EXTINF:-1,[Laliga] Osasuna Vs Levante 4 (Stp)
-#EXTVLCOPT:http-referrer=https://streamtp-golden1.click/global1.php?stream=premier1uk
-#EXTVLCOPT:http-origin=https://streamtp-golden1.click/global1.php?stream=premier1uk
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://s1.tudeporteshoy.xyz:443/global/premier1uk/index.m3u8?token=6b6ae7d1c247ee8f09b665302986b17e82e78058-15-1787641249-1787587249
-#EXTINF:-1,[Laliga] Osasuna Vs Levante  Español 1 (Plibre)
-#EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=espn4
-#EXTVLCOPT:http-origin=https://la18hd.su/vivo/canales.php?stream=espn4
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://YXdlc29tZQ.fubo18.com:443/espn4/mono.m3u8?token=ddf0a8c579abe6f4b6673960a70510f51950dc1c-47-1787613349-1787595349
-#EXTINF:-1,[Laliga] Osasuna Vs Levante  Español 1 (Stp)
-#EXTVLCOPT:http-referrer=https://streamtp-golden1.click/global1.php?stream=espnplus1
-#EXTVLCOPT:http-origin=https://streamtp-golden1.click/global1.php?stream=espnplus1
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://se.tudeporteshoy.xyz:443/global/espnplus1/index.m3u8?token=62a86278fc36fa1b436e6cf7dd47af14f1eacef6-41-1787641249-1787587249
-#EXTINF:-1,[Laliga] Osasuna Vs Levante  Español 2 (Plibre)
-#EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=disney2
-#EXTVLCOPT:http-origin=https://la18hd.su/vivo/canales.php?stream=disney2
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://b2ZmaWNpYWw.fubo18.com:443/disney2/mono.m3u8?token=9b6881f40f3caa14f33f6b1017bd06287e992854-78-1787613349-1787595349
-#EXTINF:-1,[Laliga] Osasuna Vs Levante  Español 3 (Plibre)
-#EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=espndeportes
-#EXTVLCOPT:http-origin=https://la18hd.su/vivo/canales.php?stream=espndeportes
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://am91cm5leQ.fubo18.com:443/espndeportes/mono.m3u8?token=a9a42cefacf928bf35b2aefe6eacc306b7632f62-18-1787613349-1787595349
 #EXTINF:-1,[Premier League] Fulham Vs Chelsea 1 (Stp)
 #EXTVLCOPT:http-referrer=https://streamtp-golden1.click/global1.php?stream=disney4
 #EXTVLCOPT:http-origin=https://streamtp-golden1.click/global1.php?stream=disney4
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://s2.tudeporteshoy.xyz:443/global/disney4/index.m3u8?token=0d5d7ff2369306f27c694c401b25b23309276c16-14-1787641252-1787587252
+https://so.tudeporteshoy.xyz:443/global/disney4/index.m3u8?token=1998a4dcd2d34b959ce18137bab7ea7f52e857aa-09-1787661049-1787607049
 #EXTINF:-1,[Premier League] Fulham Vs Chelsea 2 (Stp)
 #EXTVLCOPT:http-referrer=https://streamtp-golden1.click/global1.php?stream=max1
 #EXTVLCOPT:http-origin=https://streamtp-golden1.click/global1.php?stream=max1
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://sa.tudeporteshoy.xyz:443/global/max1/index.m3u8?token=5a300485d7e1bf92671828716c778b305e9517d1-d4-1787641252-1787587252
+https://si.tudeporteshoy.xyz:443/global/max1/index.m3u8?token=c19d1ba05e4aec919032844d347f20352b453c4b-c0-1787661049-1787607049
 #EXTINF:-1,[Premier League] Fulham Vs Chelsea 3 (Stp)
 #EXTVLCOPT:http-referrer=https://streamtp-golden1.click/global1.php?stream=espn1col
 #EXTVLCOPT:http-origin=https://streamtp-golden1.click/global1.php?stream=espn1col
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://s2.tudeporteshoy.xyz:443/global/espn1col/index.m3u8?token=a1c8885bb41dd67b53096584089529a300c98c9a-a7-1787641252-1787587252
+https://so.tudeporteshoy.xyz:443/global/espn1col/index.m3u8?token=cf9784f884b9592bf8dca0654c65e4a22f008ef6-2f-1787661049-1787607049
 #EXTINF:-1,[Premier League] Fulham Vs Chelsea 4 (Stp)
 #EXTVLCOPT:http-referrer=https://streamtp-golden1.click/global1.php?stream=espn
 #EXTVLCOPT:http-origin=https://streamtp-golden1.click/global1.php?stream=espn
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://sa.tudeporteshoy.xyz:443/global/espn/index.m3u8?token=5e1c507b582de3cbda65ec2e6566be67a02e78ec-3d-1787641252-1787587252
+https://s1.tudeporteshoy.xyz:443/global/espn/index.m3u8?token=a2e770e94e3f2f5dba7d6eccc3221a6fe8361417-0a-1787661049-1787607049
 #EXTINF:-1,[Premier League] Fulham Vs Chelsea 5 (Stp)
 #EXTVLCOPT:http-referrer=https://streamtp-golden1.click/global1.php?stream=universo_usa
 #EXTVLCOPT:http-origin=https://streamtp-golden1.click/global1.php?stream=universo_usa
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://se.tudeporteshoy.xyz:443/global/universo_usa/index.m3u8?token=d2c98a3d1c7843acdeb0a75843a62cbf24a0726c-17-1787641252-1787587252
-#EXTINF:-1,[Premier League] Fulham Vs Chelsea  Español 1 (Plibre)
-#EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=espn
-#EXTVLCOPT:http-origin=https://la18hd.su/vivo/canales.php?stream=espn
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://bgvnzw5k.fubo18.com:443/espn/mono.m3u8?token=c40e5a49c25773f1c2b3108d41e873659ec6b136-48-1787613349-1787595349
-#EXTINF:-1,[Premier League] Fulham Vs Chelsea  Español 2 (Plibre)
-#EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=disney4
-#EXTVLCOPT:http-origin=https://la18hd.su/vivo/canales.php?stream=disney4
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://y2fzdgxl.fubo18.com:443/disney4/mono.m3u8?token=6452f8af3ebb98f996590fda366e0556dbca4da6-e7-1787613349-1787595349
-#EXTINF:-1,[Premier League] Fulham Vs Chelsea  Español 3 (Plibre)
-#EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=universo
-#EXTVLCOPT:http-origin=https://la18hd.su/vivo/canales.php?stream=universo
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://bgvnzw5k.fubo18.com:443/universo/mono.m3u8?token=83888e085a973d23e3c38e8dda25dcbac5a1436b-93-1787613349-1787595349
+https://s1.tudeporteshoy.xyz:443/global/universo_usa/index.m3u8?token=5c4502c576779d6467aac12dd0227e3f35692c63-7b-1787661049-1787607049
 #EXTINF:-1,[Premier League] Fulham Vs Chelsea  Universo (Strmxhd)
 #EXTVLCOPT:http-referrer=https://streamxhd.com/live1.php?stream=universo
 #EXTVLCOPT:http-origin=https://streamxhd.com/live1.php?stream=universo
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
 https://khala.skylivehd.com/global/universo/index.m3u8?token=d9a68974ab34ff482a982c44919d294953012d36-4e-1787646656-1787592656
-#EXTINF:-1,[Serie A] Bologna Vs Lazio  Español 1 (Plibre)
-#EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=espn2
-#EXTVLCOPT:http-origin=https://la18hd.su/vivo/canales.php?stream=espn2
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://bmf0aw9u.fubo18.com:443/espn2/mono.m3u8?token=e93c493c91413adaae2d9fd0370ee7a98b4aa1db-8a-1787613350-1787595350
-#EXTINF:-1,[Serie A] Bologna Vs Lazio  Español 2 (Plibre)
-#EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=disney1
-#EXTVLCOPT:http-origin=https://la18hd.su/vivo/canales.php?stream=disney1
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://dglvz29s.fubo18.com:443/disney1/mono.m3u8?token=754ac861849fb43a02c3ae585e5ea59635ce4e2b-8e-1787613350-1787595350
-#EXTINF:-1,[Serie A] Bologna Vs Lazio  Español 3 (Plibre)
-#EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=espn2mx
-#EXTVLCOPT:http-origin=https://la18hd.su/vivo/canales.php?stream=espn2mx
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://y2fzdgxl.fubo18.com:443/espn2mx/mono.m3u8?token=162fb88b99280a4a908a7a0535cea409f3c89b58-a6-1787613350-1787595350
-#EXTINF:-1,[Serie A] Bologna Vs Lazio  Español 4 (Plibre)
-#EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=universo
-#EXTVLCOPT:http-origin=https://la18hd.su/vivo/canales.php?stream=universo
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://a2lja3m.fubo18.com:443/universo/mono.m3u8?token=b78ad80fca7a54502ddd17bf2729917de64737c6-3-1787613350-1787595350
-#EXTINF:-1,[Serie A] Roma Vs Fiorentina 1 (Stp)
-#EXTVLCOPT:http-referrer=https://streamtp-golden1.click/global1.php?stream=disney3
-#EXTVLCOPT:http-origin=https://streamtp-golden1.click/global1.php?stream=disney3
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://so.tudeporteshoy.xyz:443/global/disney3/index.m3u8?token=e99de0497de1b98d15ccc6386e933d6d4c566b5b-cc-1787641249-1787587249
-#EXTINF:-1,[Serie A] Roma Vs Fiorentina 2 (Stp)
-#EXTVLCOPT:http-referrer=https://streamtp-golden1.click/global1.php?stream=espn2col
-#EXTVLCOPT:http-origin=https://streamtp-golden1.click/global1.php?stream=espn2col
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://po.tudeporteshoy.xyz:443/global/espn2col/index.m3u8?token=c4455e0c309638c88a378a9119cfb2dca53a8c70-ba-1787641250-1787587250
-#EXTINF:-1,[Serie A] Roma Vs Fiorentina 3 (Stp)
-#EXTVLCOPT:http-referrer=https://streamtp-golden1.click/global1.php?stream=espn2mx
-#EXTVLCOPT:http-origin=https://streamtp-golden1.click/global1.php?stream=espn2mx
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://s1.tudeporteshoy.xyz:443/global/espn2mx/index.m3u8?token=3c8c0de2dd4ba723809f7cd36ab87668975aba76-75-1787641250-1787587250
-#EXTINF:-1,[Serie A] Roma Vs Fiorentina  Español 1 (Plibre)
-#EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=espn2
-#EXTVLCOPT:http-origin=https://la18hd.su/vivo/canales.php?stream=espn2
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://c2f2zq.fubo18.com:443/espn2/mono.m3u8?token=ad9d1d615271a7e26f50782ede861a0fe0d274db-c8-1787613350-1787595350
-#EXTINF:-1,[Serie A] Roma Vs Fiorentina  Español 2 (Plibre)
-#EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=disney3
-#EXTVLCOPT:http-origin=https://la18hd.su/vivo/canales.php?stream=disney3
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://y2fzdgxl.fubo18.com:443/disney3/mono.m3u8?token=8401e6d43eb099739c569a61f59445eb07241d94-47-1787613350-1787595350
-#EXTINF:-1,[Serie A] Roma Vs Fiorentina  Español 3 (Plibre)
-#EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=espn2mx
-#EXTVLCOPT:http-origin=https://la18hd.su/vivo/canales.php?stream=espn2mx
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://am91cm5leQ.fubo18.com:443/espn2mx/mono.m3u8?token=9fdeb59a873cae909a6ef8dbeb9e38b0d0d278a7-d4-1787613350-1787595350
