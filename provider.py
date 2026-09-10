@@ -1,6 +1,6 @@
 import requests
 import re
-from datetime import datetime
+from datetime import datetime, timezone, timedelta
 
 SOURCE_URL = "https://raw.githubusercontent.com/raid35/docs/main/SPORT_UROP.m3u"
 
@@ -9,7 +9,18 @@ LOG_FILE    = "stv2.log"
 
 HEADER = '#EXTM3U url-tvg="https://raw.githubusercontent.com/didikc/EPG-8/main/epg.xml.gz"'
 
-BLACKLIST = ["caze tv 1", "caze tv 2"]
+# Channels to always exclude
+BLACKLIST = ["caze tv 1", "caze tv 2", "mlb", "nfl", "dude"]
+
+# Channels to prepend at the very top
+PREPEND_CHANNELS = [
+    '''#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/iprtl/p1/master/logo/skysportpl.png" ,Sky Sports Premier League
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+https://bl.rutube.ru/livestream/e5bacac3b8e730791d4cab20ae81cd8f/index.m3u8?s=supMvSCVCg69RtHgOfv1Kg&e=2089026853&scheme=https''',
+
+    '''#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/iprtl/p1/master/logo/skysportpl.png" ,Sky Sports Premier League
+https://bl.rutube.ru/livestream/e5bacac3b8e730791d4cab20ae81cd8f/index.m3u8?s=qd2MUJx2uKe8vQ1n81yoEA&e=2088940274&scheme=https'''
+]
 
 def download(url):
     try:
@@ -41,8 +52,17 @@ def parse_m3u(content):
             i += 1
     return entries
 
+def is_block_allowed(block):
+    if not block:
+        return False
+    header = block[0].lower()
+    for bad in BLACKLIST:
+        if bad in header:
+            return False
+    return True
+
 def clean_extinf(line):
-    # Remove all unwanted attributes
+    # Remove unwanted attributes
     line = re.sub(r'\s*group-title="[^"]+"', '', line, flags=re.IGNORECASE)
     line = re.sub(r'\s*tvg-id="[^"]+"', '', line, flags=re.IGNORECASE)
     line = re.sub(r'\s*tvg-name="[^"]+"', '', line, flags=re.IGNORECASE)
@@ -76,89 +96,40 @@ def clean_extinf(line):
         elif channel_name_norm.lower() == "tsn 4":
             return '#EXTINF:-1 tvg-id="TSN4.ca@SD" tvg-logo="https://i.imgur.com/qJyAWU8.png" ,TSN 4'
         elif channel_name_norm.lower() == "mutv":
-            return '#EXTINF:-1 tvg-id="MUTV.uk@SD" tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiDK5wO1M6YOy_2_IuEtYuj25ReGg3p-V3j60gGqa-cd8rz6f9xuH2o4mQVCRN1rApaVMGLT1q-bhDKcYGS4FbkseAgUhNFvAsDug1hI9wg4iFAGY6JAEEHtqsqdSK2A3CaqugX-fctkzTaywaYoaSIY1ZfFQjwdrQX_CNBMT5IpunnbZNpg2QzZuWjcPvt/s700/MUTV.png" ,MUTV HD'
-        elif channel_name_norm.lower() == "cbcsportyedek":
-            return '#EXTINF:-1 tvg-id="" tvg-logo="" ,CBC Sport Yedek'
-        elif channel_name_norm.lower() == "fox sports 1 hd":
-            return '#EXTINF:-1 tvg-id="" tvg-logo="https://raw.githubusercontent.com/didikc/TV-Logo/main/logos/foxsports1.png" ,Fox Sports 1'
-        elif channel_name_norm.lower() == "fox sports 1":
-            return '#EXTINF:-1 tvg-id="" tvg-logo="https://raw.githubusercontent.com/didikc/TV-Logo/main/logos/foxsports1.png" ,Fox Sports 1'
-        elif channel_name_norm.lower() == "fox sports 2":
-            return '#EXTINF:-1 tvg-id="" tvg-logo="https://raw.githubusercontent.com/didikc/TV-Logo/main/logos/foxsports2.png" ,Fox Sports 2'
-        elif channel_name_norm.lower() == "fx sports 2":
-            return '#EXTINF:-1 tvg-id="" tvg-logo="https://raw.githubusercontent.com/didikc/TV-Logo/main/logos/foxsports2.png" ,Fox Sports 2'    
-        elif channel_name_norm.lower() == "fox sports 3":
-            return '#EXTINF:-1 tvg-id="" tvg-logo="https://raw.githubusercontent.com/didikc/TV-Logo/main/logos/foxsports3.png" ,Fox Sports 3'
-        elif channel_name_norm.lower() == "fx prem":
-            return '#EXTINF:-1 tvg-id="" tvg-logo="" ,Fox Premium'
-        elif channel_name_norm.lower() == "nba tv":
-            return '#EXTINF:-1 tvg-id="" tvg-logo="https://raw.githubusercontent.com/didikc/TV-Logo/main/logos/nbatv.png" ,NBA TV'
-        
-        # Default case
-        return f"#EXTINF:-1,{channel_name_norm}"
+            return '#EXTINF:-1 tvg-id="MUTV.uk@SD" tvg-logo="https://i.imgur.com/3lFfYzY.png" ,MUTV'
+        else:
+            return f"#EXTINF:-1,{channel_name_norm}"
     return line
 
-def is_block_allowed(block, log_entries):
-    if not block:
-        return False
-    header = block[0].lower()
-    for bad in BLACKLIST:
-        if bad in header:
-            log_entries.append(f"BLACKLISTED: {header}")
-            return False
-    return True
-
 def main():
-    print("Downloading playlist...")
-    source = download(SOURCE_URL)
-
-    print("Parsing playlist...")
-    entries = parse_m3u(source)
-
     log_entries = [f"Run started at {datetime.now().isoformat()}"]
-    print("Filtering...")
-    filtered = [block for block in entries if is_block_allowed(block, log_entries)]
+    try:
+        content = download(SOURCE_URL)
+        entries = parse_m3u(content)
 
-    # Separate TNT Sports channels
-    tnt_blocks = []
-    other_blocks = []
-    for block in filtered:
-        header = block[0].lower()
-        if "tnt sports" in header:
-            tnt_blocks.append(block)
-        else:
-            other_blocks.append(block)
+        with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
+            # Write header
+            f.write(HEADER + "\n")
 
-    print(f"Total channels after filter: {len(filtered)}")
-    print(f"TNT Sports channels prioritized: {len(tnt_blocks)}")
+            # Write the two Sky Sports Premier League entries first
+            for block in PREPEND_CHANNELS:
+                f.write(block + "\n")
 
-    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-        f.write(HEADER + "\n")
+            # Write the rest of the parsed channels
+            for block in entries:
+                if not is_block_allowed(block):
+                    continue
+                cleaned = clean_extinf(block[0])
+                f.write(cleaned + "\n")
+                for line in block[1:]:
+                    f.write(line + "\n")
 
-        # Write TNT Sports first
-        for block in tnt_blocks:
-            for idx, line in enumerate(block):
-                if idx == 0:
-                    line = clean_extinf(line)
-                else:
-                    line = line.replace("|", "").replace(",,", ",")
-                f.write(line + "\n")
+        log_entries.append(f"✅ Playlist written to {OUTPUT_FILE}")
+    except Exception as e:
+        log_entries.append(f"❌ Error: {e}")
 
-        # Then write the rest
-        for block in other_blocks:
-            for idx, line in enumerate(block):
-                if idx == 0:
-                    line = clean_extinf(line)
-                else:
-                    line = line.replace("|", "").replace(",,", ",")
-                f.write(line + "\n")
-
-    # Write log file
     with open(LOG_FILE, "w", encoding="utf-8") as logf:
-        for entry in log_entries:
-            logf.write(entry + "\n")
-
-    print(f"✅ Done: saved to {OUTPUT_FILE}, log written to {LOG_FILE}")
+        logf.write("\n".join(log_entries))
 
 if __name__ == "__main__":
     main()
