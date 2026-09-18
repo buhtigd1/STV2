@@ -23,8 +23,16 @@ def download(url):
         return ""
 
 def clean_extinf(line):
-    # Remove ONLY group-title attributes, keep tvg-id and tvg-logo intact
-    return re.sub(r'\s*group-title="[^"]+"', '', line, flags=re.IGNORECASE)
+    # Remove ONLY group-title, keep tvg-id and tvg-logo intact
+    line = re.sub(r'\s*group-title="[^"]+"', '', line, flags=re.IGNORECASE)
+
+    # Ensure proper comma separation: tvg-logo ends before comma
+    if 'tvg-logo=' in line and ',' in line:
+        # Split once at the first comma after attributes
+        parts = line.split(',', 1)
+        if len(parts) == 2:
+            line = parts[0].strip() + "," + parts[1].strip()
+    return line
 
 def main():
     log("Downloading playlist...")
