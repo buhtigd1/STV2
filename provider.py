@@ -34,14 +34,25 @@ def download(url):
         return ""
 
 def clean_extinf(line):
-    # Remove ONLY group-title, keep tvg-id and tvg-logo intact
+    # Remove ONLY group-title
     line = re.sub(r'\s*group-title="[^"]+"', '', line, flags=re.IGNORECASE)
 
-    # Ensure proper comma separation: tvg-logo ends before comma
-    if 'tvg-logo=' in line and ',' in line:
-        parts = line.split(',', 1)
-        if len(parts) == 2:
-            line = parts[0].strip() + "," + parts[1].strip()
+    # Fix malformed tvg-logo with comma inside quotes
+    # Example: tvg-logo="URL,Channel Name" → tvg-logo="URL",Channel Name
+    match = re.search(r'tvg-logo="([^",]+),([^"]+)"', line)
+    if match:
+        url = match.group(1)
+        channel = match.group(2)
+        line = re.sub(r'tvg-logo="[^"]+"', f'tvg-logo="{url}"', line)
+        # Ensure proper comma separation
+        if "," not in line.split("tvg-logo=")[1]:
+            line = line + "," + channel.strip()
+    else:
+        # Ensure proper comma separation if attributes and channel name are merged
+        if 'tvg-logo=' in line and ',' in line:
+            parts = line.split(',', 1)
+            if len(parts) == 2:
+                line = parts[0].strip() + "," + parts[1].strip()
     return line
 
 def main():
