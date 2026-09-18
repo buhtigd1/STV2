@@ -34,13 +34,13 @@ def download(url):
         return ""
 
 def clean_extinf(line):
-    # Remove group-title
+    # Remove group-title, tvg-logo, tvg-name, up-title, etc.
     line = re.sub(r'\s*group-title="[^"]+"', '', line, flags=re.IGNORECASE)
-
-    # Remove tvg-logo
     line = re.sub(r'\s*tvg-logo="[^"]+"', '', line, flags=re.IGNORECASE)
+    line = re.sub(r'\s*tvg-name="[^"]+"', '', line, flags=re.IGNORECASE)
+    line = re.sub(r'\s*\w+-title="[^"]+"', '', line, flags=re.IGNORECASE)
 
-    # Fix malformed tvg-logo with comma inside quotes (if any remain)
+    # Fix malformed tvg-logo with comma inside quotes (rare cases)
     match = re.search(r'tvg-logo="([^",]+),([^"]+)"', line)
     if match:
         url = match.group(1)
@@ -49,12 +49,13 @@ def clean_extinf(line):
         if "," not in line.split("tvg-logo=")[1]:
             line = line + "," + channel.strip()
 
-    # Ensure proper comma separation
-    if 'tvg-id=' in line and ',' in line:
-        parts = line.split(',', 1)
+    # Ensure proper comma separation: attributes before, channel name after
+    if line.startswith("#EXTINF") and "," not in line:
+        parts = line.split(' ', 1)
         if len(parts) == 2:
-            line = parts[0].strip() + "," + parts[1].strip()
-    return line
+            line = parts[0] + "," + parts[1]
+
+    return line.strip()
 
 def main():
     log("Downloading playlist...")
@@ -79,7 +80,7 @@ def main():
             if line.startswith("#EXTINF"):
                 f.write(clean_extinf(line) + "\n")
             else:
-                f.write(line + "\n")
+                f.write(line.strip() + "\n")
 
     log(f"✅ Done: saved to {OUTPUT_FILE}")
 
