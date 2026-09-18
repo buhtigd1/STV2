@@ -10,11 +10,11 @@ HEADER = '#EXTM3U url-tvg="https://raw.githubusercontent.com/didikc/EPG-8/main/e
 
 # Channels to prepend at the very top
 PREPEND_CHANNELS = [
-    '''#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/iprtl/p1/master/logo/skysportpl.png" ,Sky Sports Premier League
+    '''#EXTINF:-1 ,Sky Sports Premier League
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 https://bl.rutube.ru/livestream/e5bacac3b8e730791d4cab20ae81cd8f/index.m3u8?s=supMvSCVCg69RtHgOfv1Kg&e=2089026853&scheme=https''',
 
-    '''#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/iprtl/p1/master/logo/skysportpl.png" ,Sky Sports Premier League
+    '''#EXTINF:-1 ,Sky Sports Premier League
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 https://bl.rutube.ru/livestream/e5bacac3b8e730791d4cab20ae81cd8f/index.m3u8?s=qd2MUJx2uKe8vQ1n81yoEA&e=2088940274&scheme=https'''
 ]
@@ -34,25 +34,26 @@ def download(url):
         return ""
 
 def clean_extinf(line):
-    # Remove ONLY group-title
+    # Remove group-title
     line = re.sub(r'\s*group-title="[^"]+"', '', line, flags=re.IGNORECASE)
 
-    # Fix malformed tvg-logo with comma inside quotes
-    # Example: tvg-logo="URL,Channel Name" → tvg-logo="URL",Channel Name
+    # Remove tvg-logo
+    line = re.sub(r'\s*tvg-logo="[^"]+"', '', line, flags=re.IGNORECASE)
+
+    # Fix malformed tvg-logo with comma inside quotes (if any remain)
     match = re.search(r'tvg-logo="([^",]+),([^"]+)"', line)
     if match:
         url = match.group(1)
         channel = match.group(2)
         line = re.sub(r'tvg-logo="[^"]+"', f'tvg-logo="{url}"', line)
-        # Ensure proper comma separation
         if "," not in line.split("tvg-logo=")[1]:
             line = line + "," + channel.strip()
-    else:
-        # Ensure proper comma separation if attributes and channel name are merged
-        if 'tvg-logo=' in line and ',' in line:
-            parts = line.split(',', 1)
-            if len(parts) == 2:
-                line = parts[0].strip() + "," + parts[1].strip()
+
+    # Ensure proper comma separation
+    if 'tvg-id=' in line and ',' in line:
+        parts = line.split(',', 1)
+        if len(parts) == 2:
+            line = parts[0].strip() + "," + parts[1].strip()
     return line
 
 def main():
