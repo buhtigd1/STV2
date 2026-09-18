@@ -1,2 +1,6 @@
 Run started at 2026-09-18T03:57:48.610777
-✅ Playlist written to stv2.m3u
+✅ Playlist written to stv2.m3u2026-09-18 06:23:30 [INFO] === Scraper run started ===
+2026-09-18 06:23:30 [INFO] Starting download: https://raw.githubusercontent.com/raid35/docs/main/SPORT_UROP.m3u
+2026-09-18 06:23:30 [INFO] Download successful
+2026-09-18 06:23:30 [INFO] Playlist saved to stv2.m3u with header #EXTM3U
+2026-09-18 06:23:30 [INFO] === Scraper run finished ===
