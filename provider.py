@@ -1,12 +1,9 @@
 import requests
-import re
 from datetime import datetime
 
 SOURCE_URL = "https://raw.githubusercontent.com/raid35/docs/main/SPORT_UROP.m3u"
 OUTPUT_FILE = "stv2.m3u"
 LOG_FILE    = "stv2.log"
-
-HEADER = '#EXTM3U url-tvg="https://raw.githubusercontent.com/didikc/EPG-8/main/epg.xml.gz"'
 
 # Channels to prepend at the very top
 PREPEND_CHANNELS = [
@@ -33,30 +30,6 @@ def download(url):
         log(f"❌ Failed to download: {url}\n{e}")
         return ""
 
-def clean_extinf(line):
-    # Remove group-title, tvg-logo, tvg-name, up-title, etc.
-    line = re.sub(r'\s*group-title="[^"]+"', '', line, flags=re.IGNORECASE)
-    line = re.sub(r'\s*tvg-logo="[^"]+"', '', line, flags=re.IGNORECASE)
-    line = re.sub(r'\s*tvg-name="[^"]+"', '', line, flags=re.IGNORECASE)
-    line = re.sub(r'\s*\w+-title="[^"]+"', '', line, flags=re.IGNORECASE)
-
-    # Fix malformed tvg-logo with comma inside quotes (rare cases)
-    match = re.search(r'tvg-logo="([^",]+),([^"]+)"', line)
-    if match:
-        url = match.group(1)
-        channel = match.group(2)
-        line = re.sub(r'tvg-logo="[^"]+"', f'tvg-logo="{url}"', line)
-        if "," not in line.split("tvg-logo=")[1]:
-            line = line + "," + channel.strip()
-
-    # Ensure proper comma separation: attributes before, channel name after
-    if line.startswith("#EXTINF") and "," not in line:
-        parts = line.split(' ', 1)
-        if len(parts) == 2:
-            line = parts[0] + "," + parts[1]
-
-    return line.strip()
-
 def main():
     log("Downloading playlist...")
     source = download(SOURCE_URL)
@@ -64,23 +37,9 @@ def main():
         log("No content downloaded.")
         return
 
-    log("Processing playlist...")
-    lines = source.splitlines()
-
+    log("Writing playlist to file...")
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-        # Write header
-        f.write(HEADER + "\n")
-
-        # Write prepend channels first
-        for block in PREPEND_CHANNELS:
-            f.write(block + "\n")
-
-        # Write cleaned playlist
-        for line in lines:
-            if line.startswith("#EXTINF"):
-                f.write(clean_extinf(line) + "\n")
-            else:
-                f.write(line.strip() + "\n")
+        f.write(source)
 
     log(f"✅ Done: saved to {OUTPUT_FILE}")
 
