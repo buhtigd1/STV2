@@ -1,5 +1,4 @@
 import requests
-import re
 from datetime import datetime
 
 SOURCE_URL = "https://raw.githubusercontent.com/raid35/docs/main/SPORT_UROP.m3u"
@@ -32,10 +31,6 @@ def download(url):
         log(f"❌ Failed: {url} -> {e}")
         return ""
 
-def remove_group_title(content):
-    # Remove any attribute containing group-title=
-    return re.sub(r'\s*group-title="[^"]*"', '', content, flags=re.IGNORECASE)
-
 def main():
     log("🚀 Starting scrape process")
     content = download(SOURCE_URL)
@@ -43,14 +38,11 @@ def main():
         log("❌ No content downloaded")
         return
 
-    # Clean group-title attributes
-    cleaned_content = remove_group_title(content)
-
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         f.write(HEADER + "\n")
         for ch in PREPEND_CHANNELS:
             f.write(ch + "\n")
-        f.write(cleaned_content)
+        f.write(content)
 
     log(f"🎉 Finished writing {OUTPUT_FILE}")
 
