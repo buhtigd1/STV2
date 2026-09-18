@@ -10,7 +10,7 @@ https://otte.live.fly.ww.aiv-cdn.net/gru-nitro/live/clients/dash/enc/3ynrpdanq2/
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
 #KODIPROP:inputstream.adaptive.license_key=d9623774ac5c8c351aafe97c5fe70267:5164e6d05164a2d65fa8fcc962aa4861
 https://otte.live.fly.ww.aiv-cdn.net/lhr-nitro/live/clients/dash/enc/rbem8rorcw/out/v1/5318821e2c3c44c2a439681b9aa86e9b/cenc.mpd
-#EXTINF:-1  tvg-logo="https://static.wikia.nocookie.net/logopedia/images/8/8f/Fubo_Sports.png/revision/latest?cb=20250117221217", FUBO SPORTS 1
+#EXTINF:-1  tvg-logo="https://static.wikia.nocookie.net/logopedia/images/8/8f/Fubo_Sports.png/revision/latest?cb=20250117221217",FUBO SPORTS 1
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:145.0) Gecko/20100101 Firefox/145.0
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=dc69b6159a0f9f0a4e03b3ff91cbacd5:d0dcbcd7723bc40df0bf34c9c092d51f
@@ -91,14 +91,14 @@ https://dash2.antik.sk/stream/nvidia_nova_sport1/playlist_cenc.mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=11223344556677889900112233445566:4b80724d0ef86bcb2c21f7999d67739d
 https://dash2.antik.sk/stream/nvidia_nova_sport2/playlist_cenc.mpd
-#EXTINF:-1 tvg-logo="https://th.bing.com/th/id/R.e9059815f23a6cef6b278193c3ead0f2?rik=3tojQDbLPR596Q&pid=ImgRaw&r=0",DSPORTS 
+#EXTINF:-1 tvg-logo="https://th.bing.com/th/id/R.e9059815f23a6cef6b278193c3ead0f2?rik=3tojQDbLPR596Q&pid=ImgRaw&r=0",DSPORTS
 #KODIPROP:inputstream.adaptive.license_key=45bbd582f220f438f896450d8306a3f2:582c6ba7f64bbc0f2d91c6b0c265760c
 https://otte.live.fly.ww.aiv-cdn.net/gru-nitro/live/clients/dash-sd/enc/hubonmgf5k/out/v1/10560d92577e4917973aa4624124ecd6/cenc-sd.mpd
-#EXTINF:-1 tvg-logo="https://th.bing.com/th/id/R.e9059815f23a6cef6b278193c3ead0f2?rik=3tojQDbLPR596Q&pid=ImgRaw&r=0",DSPORTS+ 
+#EXTINF:-1 tvg-logo="https://th.bing.com/th/id/R.e9059815f23a6cef6b278193c3ead0f2?rik=3tojQDbLPR596Q&pid=ImgRaw&r=0",DSPORTS+
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=8afa490e1640be969729fb459182e4ec:6f129820cdd5b6978a98c604c72cf05b
 https://otte.live.fly.ww.aiv-cdn.net/gru-nitro/live/clients/dash-sd/enc/kp7qfx2tly/out/v1/bbfb730b45b74d4ea875d75786ea3f13/cenc-sd.mpd
-#EXTINF:-1 data-source="Manual" tvg-logo="https://th.bing.com/th/id/R.e9059815f23a6cef6b278193c3ead0f2?rik=3tojQDbLPR596Q&pid=ImgRaw&r=0" tvg-uid="7bf84fcaa62763110d18be3fa4c11c72",DSPORTS2 
+#EXTINF:-1 data-source="Manual" tvg-logo="https://th.bing.com/th/id/R.e9059815f23a6cef6b278193c3ead0f2?rik=3tojQDbLPR596Q&pid=ImgRaw&r=0" tvg-uid="7bf84fcaa62763110d18be3fa4c11c72",DSPORTS2
 #KODIPROP:inputstream.adaptive.license_key=18044a84b7e6c1bbf852591797e53a2c:38b3b6f8810917d89636927bddb79294
 https://otte.live.fly.ww.aiv-cdn.net/gru-nitro/live/clients/dash-sd/enc/hufm7lgnhx/out/v1/5045630288d44123ba85427b2c36f29f/cenc-sd.mpd
 #EXTINF:-1  tvg-logo="https://iili.io/KYJqv0G.png",FOX SPORTS 1 HD
@@ -126,29 +126,29 @@ https://otte.cache.aiv-cdn.net/bom-nitro/live/dash/enc/w0rehjjrwe/out/v1/69a2a70
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=abc5b2883121012850ebda05b528c5ec:e5250924f4b738905f7163a0134587a7
 https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/ihys8nw4wv/out/v1/fde190f369484bc6b6117cc16cd82a9f/cenc.mpd
-#EXTINF:-1 tvg-logo="https://i.ibb.co.com/HYzgFbZ/tsn1.png", TSN Sports 1
+#EXTINF:-1 tvg-logo="https://i.ibb.co.com/HYzgFbZ/tsn1.png",TSN Sports 1
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:90.0) Gecko/20100101 Firefox/90.0
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=14eeabf30c14b7fbf3008c03099ce011:17d2ac8dbc5429bd70af3433aa12158d
 https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/w0rehjjrwe/out/v1/69a2a7041395406b970598f61680e7cf/cenc.mpd
-#EXTINF: -1 tvg-logo="https://i.ibb.co.com/5r1nzp5/tsn2.png", TSN Sports 2
+#EXTINF: -1 tvg-logo="https://i.ibb.co.com/5r1nzp5/tsn2.png",TSN Sports 2
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:90.0) Gecko/20100101 Firefox/140.0
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=85b277daf5aae05833fe43a68f587968:d52d7e9bc0bcd98787efd547ac91eca0
 https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/cjglydxghe/out/v1/8977baf175da4b94873194613dd3fe55/cenc.mpd
-#EXTINF: -1 tvg-logo="https://i.ibb.co.com/r6FWmrW/tsn3.png", TSN Sports 3
+#EXTINF: -1 tvg-logo="https://i.ibb.co.com/r6FWmrW/tsn3.png",TSN Sports 3
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=385ceb9714b75e0cef61254f80b31002:18dce92a2891fee68d21ede5173230f8
 https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/cscevwljkq/out/v1/972185041b244140860b7d56398e9aaf/cenc.mpd
-#EXTINF: -1 tvg-logo="https://i.ibb.co.com/PxGj1GQ/tsn4.png", TSN Sports 4
+#EXTINF: -1 tvg-logo="https://i.ibb.co.com/PxGj1GQ/tsn4.png",TSN Sports 4
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=abc5b2883121012850ebda05b528c5ec:e5250924f4b738905f7163a0134587a7
 https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/ihys8nw4wv/out/v1/fde190f369484bc6b6117cc16cd82a9f/cenc.mpd
-#EXTINF: -1 tvg-logo="https://i.ibb.co.com/F4dfsDM/tsn5.png", TSN Sports 5
+#EXTINF: -1 tvg-logo="https://i.ibb.co.com/F4dfsDM/tsn5.png",TSN Sports 5
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=385ceb9714b75e0cef61254f80b31002:18dce92a2891fee68d21ede5173230f8
 https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/cscevwljkq/out/v1/972185041b244140860b7d56398e9aaf/cenc.mpd
-#EXTINF: -1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0mqEn0AH7nUzdSHXe9J8NgYQg7sv7FdSDGIdHFFNqOg&s=10", CT Sport
+#EXTINF: -1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0mqEn0AH7nUzdSHXe9J8NgYQg7sv7FdSDGIdHFFNqOg&s=10",CT Sport
 #KODIPROP:inputstream.adaptive.license_key=11223344556677889900112233445566:4b80724d0ef86bcb2c21f7999d67739d
 https://dash2.antik.sk/stream/nvidia_ct_sport/playlist_cenc.mpd
 
