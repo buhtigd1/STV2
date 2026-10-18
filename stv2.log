@@ -353,3 +353,6 @@ Run started at 2026-09-18T10:30:20.807810
 [2026-10-18 16:23:10.487933] 🚀 Starting scrape process
 [2026-10-18 16:23:10.623006] ❌ Failed: https://raw.githubusercontent.com/raid35/docs/main/SPORT_UROP.m3u -> 404 Client Error: Not Found for url: https://raw.githubusercontent.com/raid35/docs/main/SPORT_UROP.m3u
 [2026-10-18 16:23:10.623680] ❌ No content downloaded
+[2026-10-18 18:47:51.618480] 🚀 Starting scrape process
+[2026-10-18 18:47:51.686520] ❌ Failed: https://raw.githubusercontent.com/raid35/docs/main/SPORT_UROP.m3u -> 404 Client Error: Not Found for url: https://raw.githubusercontent.com/raid35/docs/main/SPORT_UROP.m3u
+[2026-10-18 18:47:51.687297] ❌ No content downloaded
