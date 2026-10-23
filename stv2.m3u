@@ -291,7 +291,7 @@ https://edgestream3.pro/hls/hbfkazbkaznc49.m3u8?
 #KODIPROP:inputstream.adaptive.license_key=35f7d01cd9c84e7eebb32df6d0c0d3db:78f8979978becac9bb2ad06a6d14da26
 https://otte.cache.aiv-cdn.net/pdx-nitro/live/clients/dash/enc/bu76ipamds/out/v1/c0221c8feb6f4e9ba68b59e7afd3dd3f/cenc.mpd
 
-#EXTINF:-1 tvg-name="PARAMOUNT+ FHD" tvg-logo="https://play-lh.googleusercontent.com/uGA0LQgKgpxcG8Dz8haVYKs1KZTUnPu5hGhcGmXyaVXFLS-yn1LLnECUG6lb4aZVMw" group-title="24-10-2026",20:30 - 22:30 - Augsburg vs Union Berlin - PARAMOUNT+ FHD
+#EXTINF:-1 tvg-name="PARAMOUNT+ FHD" tvg-logo="https://play-lh.googleusercontent.com/uGA0LQgKgpxcG8Dz8haVYKs1KZTUnPu5hGhcGmXyaVXFLS-yn1LLnECUG6lb4aZVMw" ,PARAMOUNT+ FHD
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=dash
