@@ -293,7 +293,7 @@ https://otte.live.fly.ww.aiv-cdn.net/lhr-nitro/live/dash/enc/tu06vubgf9/out/v1/7
 https://cache07.zapitv.com/live/eds_c2/HYPERMOTION1/dash_live_ez/HYPERMOTION1.mpd
 
 
-#EXTINF:-1 tvg-id="skysports - Sky Sports Bundesliga - AQ" tvg-name="skysports - Sky Sports Bundesliga - AQ" tvg-logo="https://logodownload.org/wp-content/uploads/2020/06/sky-sports-logo-0-1.png" group-title="Sports",skysports - Sky Sports Bundesliga - AQ
+#EXTINF:-1 tvg-id="skysports - Sky Sports Bundesliga - AQ" tvg-name="skysports - Sky Sports Bundesliga - AQ" tvg-logo="https://logodownload.org/wp-content/uploads/2020/06/sky-sports-logo-0-1.png" ,skysports - Sky Sports Bundesliga - AQ
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.9.7 Chrome/56.0.2924.122 Safari/537.36 Sky_STB_ST412_2018/1.0.0 (Sky, EM150UK, )
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
@@ -301,7 +301,7 @@ https://cache07.zapitv.com/live/eds_c2/HYPERMOTION1/dash_live_ez/HYPERMOTION1.mp
 #KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"d8d5823d92a9ef9306a4cc4bd634b4b4","k":"df9fbdaa0ef9e905b75f4692f213af19"}]}
 https://nog-live1-ott.izzigo.tv/15/out/u/dash/SKY-SPORTS-24-HD/default.mpd
 
-#EXTINF:-1 tvg-id="skysports - Sky Sports 2 - AQ" tvg-name="skysports - Sky Sports 2 - AQ" tvg-logo="https://logodownload.org/wp-content/uploads/2020/06/sky-sports-logo-0-1.png" group-title="Sports",skysports - Sky Sports 2 - AQ
+#EXTINF:-1 tvg-id="skysports - Sky Sports 2 - AQ" tvg-name="skysports - Sky Sports 2 - AQ" tvg-logo="https://logodownload.org/wp-content/uploads/2020/06/sky-sports-logo-0-1.png" ,skysports - Sky Sports 2 - AQ
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.9.7 Chrome/56.0.2924.122 Safari/537.36 Sky_STB_ST412_2018/1.0.0 (Sky, EM150UK, )
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
@@ -309,7 +309,7 @@ https://nog-live1-ott.izzigo.tv/15/out/u/dash/SKY-SPORTS-24-HD/default.mpd
 #KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"99909032389c6ee41c3d2f3ec829f804","k":"41fbc575c8ef1cdac1dca990c9a0df9d"}]}
 https://nog-live1-ott.izzigo.tv/13/out/u/dash/SKY-SPORTS-21-HD/default.mpd
 
-#EXTINF:-1 tvg-id="skysports - Sky Sports LaLiga - AQ" tvg-name="skysports - Sky Sports LaLiga - AQ" tvg-logo="https://logodownload.org/wp-content/uploads/2020/06/sky-sports-logo-0-1.png" group-title="Sports",skysports - Sky Sports LaLiga - AQ
+#EXTINF:-1 tvg-id="skysports - Sky Sports LaLiga - AQ" tvg-name="skysports - Sky Sports LaLiga - AQ" tvg-logo="https://logodownload.org/wp-content/uploads/2020/06/sky-sports-logo-0-1.png" ,skysports - Sky Sports LaLiga - AQ
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.9.7 Chrome/56.0.2924.122 Safari/537.36 Sky_STB_ST412_2018/1.0.0 (Sky, EM150UK, )
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
@@ -317,7 +317,7 @@ https://nog-live1-ott.izzigo.tv/13/out/u/dash/SKY-SPORTS-21-HD/default.mpd
 #KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"cb80e1e7d7598eaf98b1dbbe6dc14ee9","k":"103ae55c7948ca1d159d6743619d26c4"}]}
 https://nog-live1-ott.izzigo.tv/12/out/u/dash/SKY-SPORTS-16-HD/default.mpd
 
-#EXTINF:-1 tvg-id="skysports - Sky Las Estrellas - AQ" tvg-name="skysports - Sky Las Estrellas - AQ" tvg-logo="https://logodownload.org/wp-content/uploads/2020/06/sky-sports-logo-0-1.png" group-title="Sports",skysports - Sky Las Estrellas - AQ
+#EXTINF:-1 tvg-id="skysports - Sky Las Estrellas - AQ" tvg-name="skysports - Sky Las Estrellas - AQ" tvg-logo="https://logodownload.org/wp-content/uploads/2020/06/sky-sports-logo-0-1.png" ,skysports - Sky Las Estrellas - AQ
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.9.7 Chrome/56.0.2924.122 Safari/537.36 Sky_STB_ST412_2018/1.0.0 (Sky, EM150UK, )
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
@@ -325,7 +325,7 @@ https://nog-live1-ott.izzigo.tv/12/out/u/dash/SKY-SPORTS-16-HD/default.mpd
 #KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"62cc24eaedef1ab322a4d52fd6bf29ad","k":"3f80b04b3e2bf3d8543956882da9dd00"}]}
 https://nog-live1-ott.izzigo.tv/11/out/u/dash/CANAL-2-HD/default.mpd
 
-#EXTINF:-1 tvg-id="skysports - Sky Sports 1 - AQ" tvg-name="skysports - Sky Sports 1 - AQ" tvg-logo="https://logodownload.org/wp-content/uploads/2020/06/sky-sports-logo-0-1.png" group-title="Sports",skysports - Sky Sports 1 - AQ
+#EXTINF:-1 tvg-id="skysports - Sky Sports 1 - AQ" tvg-name="skysports - Sky Sports 1 - AQ" tvg-logo="https://logodownload.org/wp-content/uploads/2020/06/sky-sports-logo-0-1.png" ,skysports - Sky Sports 1 - AQ
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.9.7 Chrome/56.0.2924.122 Safari/537.36 Sky_STB_ST412_2018/1.0.0 (Sky, EM150UK, )
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
@@ -333,7 +333,7 @@ https://nog-live1-ott.izzigo.tv/11/out/u/dash/CANAL-2-HD/default.mpd
 #KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"335511dfdf0d03bc06f1fdead5870b5a","k":"1a022fb33ad3de4d4579b04966551488"}]}
 https://nog-live1-ott.izzigo.tv/13/out/u/dash/SKY-SPORTS-HD/default.mpd
 
-#EXTINF:-1 tvg-id="skysports - Event 4 - AQ" tvg-name="skysports - Event 4 - AQ" tvg-logo="https://logodownload.org/wp-content/uploads/2020/06/sky-sports-logo-0-1.png" group-title="Sports",skysports - Event 4 - AQ
+#EXTINF:-1 tvg-id="skysports - Event 4 - AQ" tvg-name="skysports - Event 4 - AQ" tvg-logo="https://logodownload.org/wp-content/uploads/2020/06/sky-sports-logo-0-1.png" ,skysports - Event 4 - AQ
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.9.7 Chrome/56.0.2924.122 Safari/537.36 Sky_STB_ST412_2018/1.0.0 (Sky, EM150UK, )
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
@@ -341,7 +341,7 @@ https://nog-live1-ott.izzigo.tv/13/out/u/dash/SKY-SPORTS-HD/default.mpd
 #KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"a931b2e953695ffb0cfd38573e97ba33","k":"4ddd99cc4fb168d7f0e20be8a3287100"}]}
 https://nog-live1-ott.izzigo.tv/11/out/u/dash/SKY-LIVE-EVENT-4-HD/default.mpd
 
-#EXTINF:-1 tvg-id="skysports - Event 5 - AQ" tvg-name="skysports - Event 5 - AQ" tvg-logo="https://logodownload.org/wp-content/uploads/2020/06/sky-sports-logo-0-1.png" group-title="Sports",skysports - Event 5 - AQ
+#EXTINF:-1 tvg-id="skysports - Event 5 - AQ" tvg-name="skysports - Event 5 - AQ" tvg-logo="https://logodownload.org/wp-content/uploads/2020/06/sky-sports-logo-0-1.png" ,skysports - Event 5 - AQ
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.9.7 Chrome/56.0.2924.122 Safari/537.36 Sky_STB_ST412_2018/1.0.0 (Sky, EM150UK, )
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
@@ -349,76 +349,58 @@ https://nog-live1-ott.izzigo.tv/11/out/u/dash/SKY-LIVE-EVENT-4-HD/default.mpd
 #KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"6c89e84c52eae0428b7d2c8e887a48ec","k":"758a1484f920a0f1aa73e95d5f2be225"}]}
 https://nog-live1-ott.izzigo.tv/12/out/u/dash/SKY-LIVE-EVENT-5-HD/default.mpd
 
-#EXTINF:-1 tvg-id="550" tvg-name="adptv-550" tvg-logo="https://viiip.kitashinsaku.com/gam.php?url=https://i.ibb.co.com/yc1v0CMV/sky.png" group-title="SPORTS",SKY LIVE 1
+#EXTINF:-1 tvg-id="550" tvg-name="adptv-550" tvg-logo="https://viiip.kitashinsaku.com/gam.php?url=https://i.ibb.co.com/yc1v0CMV/sky.png" ,SKY LIVE 1
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.9.7 Chrome/56.0.2924.122 Safari/537.36 Sky_STB_ST412_2018/1.0.0 (Sky, EM150UK, )
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
 #KODIPROP:inputstream.adaptive.license_key=a3636a51227fa338cdddf5892d8a621c:1444ee3c4d08bf39454b914f797968eb
 https://nog-live1-ott.izzigo.tv/11/out/u/dash/SKY-LIVE-EVENT-1-HD/default.mpd
 
-#EXTINF:-1 tvg-id="551" tvg-name="adptv-551" tvg-logo="https://viiip.kitashinsaku.com/gam.php?url=https://i.ibb.co.com/yc1v0CMV/sky.png" group-title="SPORTS",SKY LIVE 2
+#EXTINF:-1 tvg-id="551" tvg-name="adptv-551" tvg-logo="https://viiip.kitashinsaku.com/gam.php?url=https://i.ibb.co.com/yc1v0CMV/sky.png" ,SKY LIVE 2
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.9.7 Chrome/56.0.2924.122 Safari/537.36 Sky_STB_ST412_2018/1.0.0 (Sky, EM150UK, )
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
 #KODIPROP:inputstream.adaptive.license_key=7239a58fb7388b222a834d549bf18d8f:8b04a883e88dbdebc43673d998ea1cb2
 https://nog-live1-ott.izzigo.tv/15/out/u/dash/SKY-LIVE-EVENT-2-HD/default.mpd
 
-#EXTINF:-1 tvg-id="552" tvg-name="adptv-552" tvg-logo="https://viiip.kitashinsaku.com/gam.php?url=https://i.ibb.co.com/yc1v0CMV/sky.png" group-title="SPORTS",SKY LIVE 3
+#EXTINF:-1 tvg-id="552" tvg-name="adptv-552" tvg-logo="https://viiip.kitashinsaku.com/gam.php?url=https://i.ibb.co.com/yc1v0CMV/sky.png" ,SKY LIVE 3
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.9.7 Chrome/56.0.2924.122 Safari/537.36 Sky_STB_ST412_2018/1.0.0 (Sky, EM150UK, )
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
 #KODIPROP:inputstream.adaptive.license_key=561a21ad50f806b77d328dedbe59f93e:edf3e70cc9de81a73e2a00fe9c0611a8
 https://nog-live1-ott.izzigo.tv/11/out/u/dash/SKY-LIVE-EVENT-3-HD/default.mpd
 
-#EXTINF:-1 tvg-id="553" tvg-name="adptv-553" tvg-logo="https://viiip.kitashinsaku.com/gam.php?url=https://i.ibb.co.com/yc1v0CMV/sky.png" group-title="SPORTS",SKY LIVE 4
+#EXTINF:-1 tvg-id="553" tvg-name="adptv-553" tvg-logo="https://viiip.kitashinsaku.com/gam.php?url=https://i.ibb.co.com/yc1v0CMV/sky.png" ,SKY LIVE 4
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.9.7 Chrome/56.0.2924.122 Safari/537.36 Sky_STB_ST412_2018/1.0.0 (Sky, EM150UK, )
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
 #KODIPROP:inputstream.adaptive.license_key=a931b2e953695ffb0cfd38573e97ba33:4ddd99cc4fb168d7f0e20be8a3287100
 https://nog-live1-ott.izzigo.tv/11/out/u/dash/SKY-LIVE-EVENT-4-HD/default.mpd
 
-#EXTINF:-1 tvg-id="554" tvg-name="adptv-554" tvg-logo="https://viiip.kitashinsaku.com/gam.php?url=https://i.ibb.co.com/yc1v0CMV/sky.png" group-title="SPORTS",SKY LIVE 5
+#EXTINF:-1 tvg-id="554" tvg-name="adptv-554" tvg-logo="https://viiip.kitashinsaku.com/gam.php?url=https://i.ibb.co.com/yc1v0CMV/sky.png" ,SKY LIVE 5
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.9.7 Chrome/56.0.2924.122 Safari/537.36 Sky_STB_ST412_2018/1.0.0 (Sky, EM150UK, )
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
 #KODIPROP:inputstream.adaptive.license_key=6c89e84c52eae0428b7d2c8e887a48ec:758a1484f920a0f1aa73e95d5f2be225
 https://nog-live1-ott.izzigo.tv/12/out/u/dash/SKY-LIVE-EVENT-5-HD/default.mpd
 
-#EXTINF:-1 tvg-id="555" tvg-name="adptv-555" tvg-logo="https://viiip.kitashinsaku.com/gam.php?url=https://i.ibb.co.com/yc1v0CMV/sky.png" group-title="SPORTS",SKY LIVE 6
+#EXTINF:-1 tvg-id="555" tvg-name="adptv-555" tvg-logo="https://viiip.kitashinsaku.com/gam.php?url=https://i.ibb.co.com/yc1v0CMV/sky.png" ,SKY LIVE 6
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.9.7 Chrome/56.0.2924.122 Safari/537.36 Sky_STB_ST412_2018/1.0.0 (Sky, EM150UK, )
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
 #KODIPROP:inputstream.adaptive.license_key=ec7229067cde06e0bedaa0d71ec0c974:da03b65d333e74aaae446211a83c7595
 https://nog-live1-ott.izzigo.tv/11/out/u/dash/SKY-LIVE-EVENT-6-HD/default.mpd
 
-#EXTINF:-1 tvg-id="556" tvg-name="adptv-556" tvg-logo="https://viiip.kitashinsaku.com/gam.php?url=https://i.ibb.co.com/yc1v0CMV/sky.png" group-title="SPORTS",SKY LIVE 7
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-https://nog-live1-ott.izzigo.tv/15/out/u/dash/SKY-LIVE-EVENT-7-HD/default.mpd
-
-#EXTINF:-1 tvg-logo="https://geo.edge.pontiscloud.com:9002/images/50/CH_LOGO/160/160/0/0/77798092074367.png? worldtv2" group-title="", Disney Channel
-#KODIPROP:inputstream.adaptive.stream_headers=Referer="https://www.izzigo.tv/"
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=f047ea1abdca6f03117454c4de0b6d5b:b038c8c8f114c568956d428e80ae38d7
-https://nog-live1-ott.izzigo.tv/2/out/u/dash/DISNEYCHANNELHD/default.mpd
-
-#EXTINF:-1 tvg-logo="https://geo.edge.pontiscloud.com:9002/images/70/CH_LOGO/160/160/0/0/4140286707756.png? worldtv2" group-title="", Disney Jr.
-#KODIPROP:inputstream.adaptive.stream_headers=Referer="https://www.izzigo.tv/"
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=d41d2ae9b0d875ba12e97c5a3f3eec82:3a443892e1ad1158c6fd2bf9c9146eb6
-https://nog-live1-ott.izzigo.tv/5/out/u/dash/DISNEYJRHD/default.mpd
-
-#EXTINF:-1 tvg-logo="https://geo.edge.pontiscloud.com:9002/images/50/CH_LOGO/160/160/0/0/77798092074367.png? worldtv2" group-title="", Disney Channel 2
+#EXTINF:-1 tvg-id="556" tvg-name="adptv-556" tvg-logo="https://viiip.kitashinsaku.com/gam.php?url=https://i.ibb.co.com/yc1v0CMV/sky.png" ,SKY LIVE 7
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.9.7 Chrome/56.0.2924.122 Safari/537.36 Sky_STB_ST412_2018/1.0.0 (Sky, EM150UK, )
-#KODIPROP:inputstream.adaptive.stream_headers=Referer="https://www.izzigo.tv/"
-#KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=f047ea1abdca6f03117454c4de0b6d5b:b038c8c8f114c568956d428e80ae38d7
-https://nog-live1-ott.izzigo.tv/2/out/u/dash/DISNEYCHANNELHD/default.mpd
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key=6c89e84c52eae0428b7d2c8e887a48ec:758a1484f920a0f1aa73e95d5f2be225
+https://nog-live1-ott.izzigo.tv/5/out/u/dash/SKYLIVEEVENT7HD/default.mpd
 
-#EXTINF:-1 tvg-logo="https://geo.edge.pontiscloud.com:9002/images/70/CH_LOGO/160/160/0/0/4140286707756.png? worldtv2" group-title="", Disney Jr. 2
+#EXTINF:-1 tvg-logo="https://i.postimg.cc/bYtdM0hX/sky-sports.png" group-title="", SKY Evento 8 
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.9.7 Chrome/56.0.2924.122 Safari/537.36 Sky_STB_ST412_2018/1.0.0 (Sky, EM150UK, )
-#KODIPROP:inputstream.adaptive.stream_headers=Referer="https://www.izzigo.tv/"
-#KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=d41d2ae9b0d875ba12e97c5a3f3eec82:3a443892e1ad1158c6fd2bf9c9146eb6
-https://nog-live1-ott.izzigo.tv/5/out/u/dash/DISNEYJRHD/default.mpd
-
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key=6c89e84c52eae0428b7d2c8e887a48ec:758a1484f920a0f1aa73e95d5f2be225
+https://nog-live1-ott.izzigo.tv/3/out/u/dash/SKYLIVEEVENT8HD/default.mpd
