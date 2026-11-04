@@ -5,7 +5,7 @@ SOURCE_URL = "https://raw.githubusercontent.com/raid35/docs/main/SPORT_UROP.m3u"
 OUTPUT_FILE = "stv2.m3u"
 LOG_FILE    = "stv2.log"
 
-HEADER = '#EXTM3U url-tvg=""'
+HEADER = '#EXTM3U url-tvg="https://bit.ly/4sNNOoc"'
 
 # Channels to prepend at the very top
 PREPEND_CHANNELS = [
