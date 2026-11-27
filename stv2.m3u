@@ -321,7 +321,7 @@ https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/q4u5nwaogz/out/v1
 #EXTVLCOPT:network-caching=1000
 https://bein-xtra-bein.amagi.tv/playlist.m3u8
 
-#EXTINF:-1 tvg-id="beINSportsenEspanol.qa@SD" tvg-logo=https://es.wikipedia.org/wiki/Bein_Sports_%C3%91#/media/Archivo:BeIN_Sports_En_Espa%C3%B1ol.png" ,beIN Espanol
+#EXTINF:-1 tvg-id="beINSportsenEspanol.qa@SD" tvg-logo="https://es.wikipedia.org/wiki/Bein_Sports_%C3%91#/media/Archivo:BeIN_Sports_En_Espa%C3%B1ol.png" ,beIN Espanol
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
