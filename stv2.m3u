@@ -114,21 +114,21 @@ https://dash2.antik.sk/stream/nvidia_nova_sport1/playlist_cenc.mpd
 #KODIPROP:inputstream.adaptive.license_key=11223344556677889900112233445566:4b80724d0ef86bcb2c21f7999d67739d
 https://dash2.antik.sk/stream/nvidia_nova_sport2/playlist_cenc.mpd
 
-#EXTINF:-1 tvg-id="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/DSports_logo_2022.svg/1920px-DSports_logo_2022.svg.png" ,DSPORTS 
+#EXTINF:-1 tvg-id="1099#DTSAHD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/DSports_logo_2022.svg/1920px-DSports_logo_2022.svg.png" ,DSPORTS 
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=dash
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=45bbd582f220f438f896450d8306a3f2:582c6ba7f64bbc0f2d91c6b0c265760c
 https://otte.live.fly.ww.aiv-cdn.net/gru-nitro/live/clients/dash-sd/enc/hubonmgf5k/out/v1/10560d92577e4917973aa4624124ecd6/cenc-sd.mpd
 
-#EXTINF:-1 tvg-id="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/8/83/DSports2.png" ,DSPORTS2
+#EXTINF:-1 tvg-id="1084#DTV2HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/8/83/DSports2.png" ,DSPORTS2
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=dash
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=18044a84b7e6c1bbf852591797e53a2c:38b3b6f8810917d89636927bddb79294
 https://otte.live.fly.ww.aiv-cdn.net/gru-nitro/live/clients/dash-sd/enc/hufm7lgnhx/out/v1/5045630288d44123ba85427b2c36f29f/cenc-sd.mpd
 
-#EXTINF:-1 tvg-id="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/4/45/DSportsM%C3%A1s.png" ,DSPORTS+
+#EXTINF:-1 tvg-id="1032#DTS+HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/4/45/DSportsM%C3%A1s.png" ,DSPORTS+
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=dash
 #KODIPROP:inputstream.adaptive.license_type=clearkey
@@ -291,7 +291,7 @@ https://a184aivottlinear-a.akamaihd.net/OTTB/iad-nitro/live/clients/dash/enc/5fj
 #EXTINF:-1 tvg-id="MotoGP.us" tvg-logo="https://cdn.motorsport.com/images/mgl/YN1RZ4b2/s1000/motogp-logo.jpg",MotoGP
 https://otte.live.fly.ww.aiv-cdn.net/pdx-nitro/live/clients/dash/enc/wjeweupwyc/out/v1/8197c8e055c94a868623653ac55c10bf/cenc.mpd
 
-#EXTINF:0 tvg-id="RallyTV.us" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkWlzLo93zVOtdO_dh8kM7RBRTK6Lsd761eXzGiD5cHuxFBHAyawOXPQ&s=10" ,Rally TV
+#EXTINF:0 tvg-id="gb#696e024a7e92438c27a425a8" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkWlzLo93zVOtdO_dh8kM7RBRTK6Lsd761eXzGiD5cHuxFBHAyawOXPQ&s=10" ,Rally TV
 #EXTVLCOPT:network-caching=1000
 https://rally-tv-live.akamaized.net/hls/live/2117704/RallyTV-Pri/master.m3u8
 
